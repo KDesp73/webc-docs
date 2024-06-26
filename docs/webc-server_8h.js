@@ -1,6 +1,6 @@
 var webc_server_8h =
 [
-    [ "ServeExported", "webc-server_8h.html#ae14f13b68a40dafa7f67c0adeb435eed", null ],
-    [ "ServeExportedRoot", "webc-server_8h.html#a7d208fb4788fb6736e7269882d209120", null ],
-    [ "ServeTree", "webc-server_8h.html#aa0115deee883605eba16337e8c5ab030", null ]
+    [ "WEBC_ServeExported", "webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e", null ],
+    [ "WEBC_ServeExportedRoot", "webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff", null ],
+    [ "WEBC_ServeTree", "webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9", null ]
 ];

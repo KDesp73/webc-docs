@@ -111,11 +111,11 @@ $(function(){initNavTree('webc-server_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define HTTPD_IMPLEMENTATION</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;extern/httpd.h&quot;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="webc-server_8h.html#ae14f13b68a40dafa7f67c0adeb435eed">   47</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#ae14f13b68a40dafa7f67c0adeb435eed">ServeExported</a>(<span class="keywordtype">int</span> port, <a class="code hl_struct" href="structTree.html">Tree</a> tree);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e">   47</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e">WEBC_ServeExported</a>(<span class="keywordtype">int</span> port, <a class="code hl_struct" href="structTree.html">Tree</a> tree);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="webc-server_8h.html#a7d208fb4788fb6736e7269882d209120">   57</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#a7d208fb4788fb6736e7269882d209120">ServeExportedRoot</a>(<span class="keywordtype">int</span> port, Cstr root);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff">   57</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff">WEBC_ServeExportedRoot</a>(<span class="keywordtype">int</span> port, Cstr root);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="webc-server_8h.html#aa0115deee883605eba16337e8c5ab030">   67</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#aa0115deee883605eba16337e8c5ab030">ServeTree</a>(<span class="keywordtype">int</span> port, <a class="code hl_struct" href="structTree.html">Tree</a> tree);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9">   67</a></span>WEBCAPI <span class="keywordtype">int</span> <a class="code hl_function" href="webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9">WEBC_ServeTree</a>(<span class="keywordtype">int</span> port, <a class="code hl_struct" href="structTree.html">Tree</a> tree);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// HTTPD Extensions</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">int</span> request_response_tree(<span class="keywordtype">int</span> sock, <span class="keyword">const</span> <span class="keyword">struct</span> request_t* req, <a class="code hl_struct" href="structTree.html">Tree</a> tree);</div>
@@ -126,16 +126,16 @@ $(function(){initNavTree('webc-server_8h_source.html',''); initResizable(true); 
 <div class="ttc" id="astructTree_html"><div class="ttname"><a href="structTree.html">Tree</a></div><div class="ttdef"><b>Definition</b> webc-actions.h:52</div></div>
 <div class="ttc" id="awebc-actions_8h_html"><div class="ttname"><a href="webc-actions_8h.html">webc-actions.h</a></div></div>
 <div class="ttc" id="awebc-core_8h_html"><div class="ttname"><a href="webc-core_8h.html">webc-core.h</a></div></div>
-<div class="ttc" id="awebc-server_8h_html_a7d208fb4788fb6736e7269882d209120"><div class="ttname"><a href="webc-server_8h.html#a7d208fb4788fb6736e7269882d209120">ServeExportedRoot</a></div><div class="ttdeci">WEBCAPI int ServeExportedRoot(int port, Cstr root)</div></div>
-<div class="ttc" id="awebc-server_8h_html_aa0115deee883605eba16337e8c5ab030"><div class="ttname"><a href="webc-server_8h.html#aa0115deee883605eba16337e8c5ab030">ServeTree</a></div><div class="ttdeci">WEBCAPI int ServeTree(int port, Tree tree)</div></div>
-<div class="ttc" id="awebc-server_8h_html_ae14f13b68a40dafa7f67c0adeb435eed"><div class="ttname"><a href="webc-server_8h.html#ae14f13b68a40dafa7f67c0adeb435eed">ServeExported</a></div><div class="ttdeci">WEBCAPI int ServeExported(int port, Tree tree)</div></div>
+<div class="ttc" id="awebc-server_8h_html_a4361c96c53d55df13ab32c89b44769ff"><div class="ttname"><a href="webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff">WEBC_ServeExportedRoot</a></div><div class="ttdeci">WEBCAPI int WEBC_ServeExportedRoot(int port, Cstr root)</div></div>
+<div class="ttc" id="awebc-server_8h_html_aaf0eb06a3c122243c9558a51ec288a3e"><div class="ttname"><a href="webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e">WEBC_ServeExported</a></div><div class="ttdeci">WEBCAPI int WEBC_ServeExported(int port, Tree tree)</div></div>
+<div class="ttc" id="awebc-server_8h_html_af07f9c41ce2cf297054af607561ebea9"><div class="ttname"><a href="webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9">WEBC_ServeTree</a></div><div class="ttdeci">WEBCAPI int WEBC_ServeTree(int port, Tree tree)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="webc-server_8h.html">webc-server.h</a></li>
-    <li class="footer">Generated on Wed Jun 19 2024 19:53:09 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Jun 26 2024 23:42:53 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

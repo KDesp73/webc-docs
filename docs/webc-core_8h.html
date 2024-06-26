@@ -142,10 +142,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_MINOR</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ae0cb52afb79b185b1bf82c7e235f682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901edadf17488bb6be1ac9a1e3cfea7a" id="r_a901edadf17488bb6be1ac9a1e3cfea7a"><td class="memItemLeft" align="right" valign="top"><a id="a901edadf17488bb6be1ac9a1e3cfea7a" name="a901edadf17488bb6be1ac9a1e3cfea7a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_PATCH</b>&#160;&#160;&#160;4</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_PATCH</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a901edadf17488bb6be1ac9a1e3cfea7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6d5de492ac61ad29aec7aa9a436bbf" id="r_a1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top"><a id="a1c6d5de492ac61ad29aec7aa9a436bbf" name="a1c6d5de492ac61ad29aec7aa9a436bbf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b>&#160;&#160;&#160;&quot;0.0.4&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b>&#160;&#160;&#160;&quot;0.0.5&quot;</td></tr>
 <tr class="separator:a1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d49c69a168abc9ebae83fbc0dca84e" id="r_a06d49c69a168abc9ebae83fbc0dca84e"><td class="memItemLeft" align="right" valign="top"><a id="a06d49c69a168abc9ebae83fbc0dca84e" name="a06d49c69a168abc9ebae83fbc0dca84e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBCAPI</b>&#160;&#160;&#160;extern</td></tr>
@@ -156,12 +156,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ad5f90856959abb24206878c543428ba7" id="r_ad5f90856959abb24206878c543428ba7"><td class="memItemLeft" align="right" valign="top"><a id="ad5f90856959abb24206878c543428ba7" name="ad5f90856959abb24206878c543428ba7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NO_ATTRIBUTES</b>&#160;&#160;&#160;(<a class="el" href="structAttributeList.html">AttributeList</a>){0}</td></tr>
 <tr class="separator:ad5f90856959abb24206878c543428ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27cd8ff94abfbc484eae3765c7057109" id="r_a27cd8ff94abfbc484eae3765c7057109"><td class="memItemLeft" align="right" valign="top"><a id="a27cd8ff94abfbc484eae3765c7057109" name="a27cd8ff94abfbc484eae3765c7057109"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPENING_TAG</b>(name)&#160;&#160;&#160;CONCAT(&quot;&lt;&quot;, name, &quot;&gt;&quot;)</td></tr>
-<tr class="separator:a27cd8ff94abfbc484eae3765c7057109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cce0cf7c58ef8cbeb487a02a82331fb" id="r_a3cce0cf7c58ef8cbeb487a02a82331fb"><td class="memItemLeft" align="right" valign="top"><a id="a3cce0cf7c58ef8cbeb487a02a82331fb" name="a3cce0cf7c58ef8cbeb487a02a82331fb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSING_TAG</b>(name)&#160;&#160;&#160;CONCAT(&quot;&lt;/&quot;, name, &quot;&gt;&quot;)</td></tr>
-<tr class="separator:a3cce0cf7c58ef8cbeb487a02a82331fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef97d1c276c23dab7752ff5ed322cdc0" id="r_aef97d1c276c23dab7752ff5ed322cdc0"><td class="memItemLeft" align="right" valign="top"><a id="aef97d1c276c23dab7752ff5ed322cdc0" name="aef97d1c276c23dab7752ff5ed322cdc0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_OPENING_TAG</b>(name)&#160;&#160;&#160;clib_format_text(&quot;&lt;%s&gt;&quot;, name)</td></tr>
+<tr class="separator:aef97d1c276c23dab7752ff5ed322cdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fc1160eaa3fd25bc7b695c2231114b" id="r_ac7fc1160eaa3fd25bc7b695c2231114b"><td class="memItemLeft" align="right" valign="top"><a id="ac7fc1160eaa3fd25bc7b695c2231114b" name="ac7fc1160eaa3fd25bc7b695c2231114b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_CLOSING_TAG</b>(name)&#160;&#160;&#160;clib_format_text(&quot;&lt;/%s&gt;&quot;, name)</td></tr>
+<tr class="separator:ac7fc1160eaa3fd25bc7b695c2231114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5131f7ab98065af7eb8c2ef57d52e833" id="r_a5131f7ab98065af7eb8c2ef57d52e833"><td class="memItemLeft" align="right" valign="top"><a id="a5131f7ab98065af7eb8c2ef57d52e833" name="a5131f7ab98065af7eb8c2ef57d52e833"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>META</b>&#160;&#160;&#160;&quot;meta&quot;</td></tr>
 <tr class="separator:a5131f7ab98065af7eb8c2ef57d52e833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,51 +171,30 @@ Macros</h2></td></tr>
 <tr class="memitem:a79bcfb6bde984f42d1124b068a509af7" id="r_a79bcfb6bde984f42d1124b068a509af7"><td class="memItemLeft" align="right" valign="top"><a id="a79bcfb6bde984f42d1124b068a509af7" name="a79bcfb6bde984f42d1124b068a509af7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BASE</b>&#160;&#160;&#160;&quot;base&quot;</td></tr>
 <tr class="separator:a79bcfb6bde984f42d1124b068a509af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb552ecbe099383e484fb8946710fcc" id="r_acbb552ecbe099383e484fb8946710fcc"><td class="memItemLeft" align="right" valign="top"><a id="acbb552ecbe099383e484fb8946710fcc" name="acbb552ecbe099383e484fb8946710fcc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PlainText</b>(buffer,  text)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, text)</td></tr>
-<tr class="separator:acbb552ecbe099383e484fb8946710fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5fd13d6d6c4fc11860b4c8bd08ae64e" id="r_ae5fd13d6d6c4fc11860b4c8bd08ae64e"><td class="memItemLeft" align="right" valign="top"><a id="ae5fd13d6d6c4fc11860b4c8bd08ae64e" name="ae5fd13d6d6c4fc11860b4c8bd08ae64e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Javascript</b>(buffer,  text)&#160;&#160;&#160;    PlainText(buffer, text)</td></tr>
-<tr class="separator:ae5fd13d6d6c4fc11860b4c8bd08ae64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5352a1bed43fc0ea6a57017b9179b505" id="r_a5352a1bed43fc0ea6a57017b9179b505"><td class="memItemLeft" align="right" valign="top"><a id="a5352a1bed43fc0ea6a57017b9179b505" name="a5352a1bed43fc0ea6a57017b9179b505"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Input</b>(buffer,  attr)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;input&quot;, attr)))</td></tr>
-<tr class="separator:a5352a1bed43fc0ea6a57017b9179b505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91cbfbf0b510d5d7c3b92054fd8c90d3" id="r_a91cbfbf0b510d5d7c3b92054fd8c90d3"><td class="memItemLeft" align="right" valign="top"><a id="a91cbfbf0b510d5d7c3b92054fd8c90d3" name="a91cbfbf0b510d5d7c3b92054fd8c90d3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Img</b>(buffer,  attr)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;img&quot;, attr)))</td></tr>
-<tr class="separator:a91cbfbf0b510d5d7c3b92054fd8c90d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d59933285dd9fe67e463b028e47b7b" id="r_a68d59933285dd9fe67e463b028e47b7b"><td class="memItemLeft" align="right" valign="top"><a id="a68d59933285dd9fe67e463b028e47b7b" name="a68d59933285dd9fe67e463b028e47b7b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Link</b>(buffer,  attr)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;link&quot;, attr)))</td></tr>
-<tr class="separator:a68d59933285dd9fe67e463b028e47b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741cd9b08bf0b5320f10a85f00a68731" id="r_a741cd9b08bf0b5320f10a85f00a68731"><td class="memItemLeft" align="right" valign="top"><a id="a741cd9b08bf0b5320f10a85f00a68731" name="a741cd9b08bf0b5320f10a85f00a68731"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Br</b>(buffer)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;br&quot;, NO_ATTRIBUTES)))</td></tr>
-<tr class="separator:a741cd9b08bf0b5320f10a85f00a68731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a0b9958c24131d97c6a2e701e35ddb" id="r_ae4a0b9958c24131d97c6a2e701e35ddb"><td class="memItemLeft" align="right" valign="top"><a id="ae4a0b9958c24131d97c6a2e701e35ddb" name="ae4a0b9958c24131d97c6a2e701e35ddb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Hr</b>(buffer)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;hr&quot;, NO_ATTRIBUTES)))</td></tr>
-<tr class="separator:ae4a0b9958c24131d97c6a2e701e35ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9335bdbc1ac1903e085a6bfa2ab1635" id="r_aa9335bdbc1ac1903e085a6bfa2ab1635"><td class="memItemLeft" align="right" valign="top"><a id="aa9335bdbc1ac1903e085a6bfa2ab1635" name="aa9335bdbc1ac1903e085a6bfa2ab1635"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Source</b>(buffer,  attr)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;source&quot;, attr)))</td></tr>
-<tr class="separator:aa9335bdbc1ac1903e085a6bfa2ab1635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe43ceb7923a679aa8ffac023b3a6785" id="r_afe43ceb7923a679aa8ffac023b3a6785"><td class="memItemLeft" align="right" valign="top"><a id="afe43ceb7923a679aa8ffac023b3a6785" name="afe43ceb7923a679aa8ffac023b3a6785"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Track</b>(buffer,  attr)&#160;&#160;&#160;    <a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a>(buffer, <a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a>(<a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a>(&quot;track&quot;, attr)))</td></tr>
-<tr class="separator:afe43ceb7923a679aa8ffac023b3a6785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab008af93a664e3c1c3955b86c3fc7811" id="r_ab008af93a664e3c1c3955b86c3fc7811"><td class="memItemLeft" align="right" valign="top"><a id="ab008af93a664e3c1c3955b86c3fc7811" name="ab008af93a664e3c1c3955b86c3fc7811"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H1</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 1, text);</td></tr>
-<tr class="separator:ab008af93a664e3c1c3955b86c3fc7811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861142628519f4f7ed7f61092b8b6254" id="r_a861142628519f4f7ed7f61092b8b6254"><td class="memItemLeft" align="right" valign="top"><a id="a861142628519f4f7ed7f61092b8b6254" name="a861142628519f4f7ed7f61092b8b6254"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H2</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 2, text);</td></tr>
-<tr class="separator:a861142628519f4f7ed7f61092b8b6254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc6de18a06837796efcabd1aac9f766" id="r_acdc6de18a06837796efcabd1aac9f766"><td class="memItemLeft" align="right" valign="top"><a id="acdc6de18a06837796efcabd1aac9f766" name="acdc6de18a06837796efcabd1aac9f766"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H3</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 3, text);</td></tr>
-<tr class="separator:acdc6de18a06837796efcabd1aac9f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e4e42c5c85eb41f518d1455190ac04" id="r_a85e4e42c5c85eb41f518d1455190ac04"><td class="memItemLeft" align="right" valign="top"><a id="a85e4e42c5c85eb41f518d1455190ac04" name="a85e4e42c5c85eb41f518d1455190ac04"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H4</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 4, text);</td></tr>
-<tr class="separator:a85e4e42c5c85eb41f518d1455190ac04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0189b3223d3666d2275dc751b62b08b7" id="r_a0189b3223d3666d2275dc751b62b08b7"><td class="memItemLeft" align="right" valign="top"><a id="a0189b3223d3666d2275dc751b62b08b7" name="a0189b3223d3666d2275dc751b62b08b7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H5</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 5, text);</td></tr>
-<tr class="separator:a0189b3223d3666d2275dc751b62b08b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4662d956ca4271d01791a99028b0cae4" id="r_a4662d956ca4271d01791a99028b0cae4"><td class="memItemLeft" align="right" valign="top"><a id="a4662d956ca4271d01791a99028b0cae4" name="a4662d956ca4271d01791a99028b0cae4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>H6</b>(buffer,  attr,  text)&#160;&#160;&#160;    Heading(buffer, attr, 6, text);</td></tr>
-<tr class="separator:a4662d956ca4271d01791a99028b0cae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1901bb6c09d176be34ae96fc0e5f541a" id="r_a1901bb6c09d176be34ae96fc0e5f541a"><td class="memItemLeft" align="right" valign="top"><a id="a1901bb6c09d176be34ae96fc0e5f541a" name="a1901bb6c09d176be34ae96fc0e5f541a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_PlainText</b>(buffer,  text)&#160;&#160;&#160;    <a class="el" href="#a2fc71db98daf3d80e67e6391c3ab4d45">WEBC_AppendLn</a>(buffer, text)</td></tr>
+<tr class="separator:a1901bb6c09d176be34ae96fc0e5f541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2286b93ec221975966e958c4f74089b3" id="r_a2286b93ec221975966e958c4f74089b3"><td class="memItemLeft" align="right" valign="top"><a id="a2286b93ec221975966e958c4f74089b3" name="a2286b93ec221975966e958c4f74089b3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Javascript</b>(buffer,  text)&#160;&#160;&#160;    WEBC_PlainText(buffer, text)</td></tr>
+<tr class="separator:a2286b93ec221975966e958c4f74089b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c703ce6d8ac98d4979dbe2a4c500cd" id="r_a69c703ce6d8ac98d4979dbe2a4c500cd"><td class="memItemLeft" align="right" valign="top"><a id="a69c703ce6d8ac98d4979dbe2a4c500cd" name="a69c703ce6d8ac98d4979dbe2a4c500cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H1</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 1, text);</td></tr>
+<tr class="separator:a69c703ce6d8ac98d4979dbe2a4c500cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb731a0540441f5225b7b9a10e36f196" id="r_adb731a0540441f5225b7b9a10e36f196"><td class="memItemLeft" align="right" valign="top"><a id="adb731a0540441f5225b7b9a10e36f196" name="adb731a0540441f5225b7b9a10e36f196"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H2</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 2, text);</td></tr>
+<tr class="separator:adb731a0540441f5225b7b9a10e36f196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb26ee84082c08db3aa9d10f62f4252" id="r_adcb26ee84082c08db3aa9d10f62f4252"><td class="memItemLeft" align="right" valign="top"><a id="adcb26ee84082c08db3aa9d10f62f4252" name="adcb26ee84082c08db3aa9d10f62f4252"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H3</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 3, text);</td></tr>
+<tr class="separator:adcb26ee84082c08db3aa9d10f62f4252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23857ff0fc30500877d2bee8326a1b5" id="r_ac23857ff0fc30500877d2bee8326a1b5"><td class="memItemLeft" align="right" valign="top"><a id="ac23857ff0fc30500877d2bee8326a1b5" name="ac23857ff0fc30500877d2bee8326a1b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H4</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 4, text);</td></tr>
+<tr class="separator:ac23857ff0fc30500877d2bee8326a1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b0a1abe54664fca2955b3713c7eed3" id="r_a72b0a1abe54664fca2955b3713c7eed3"><td class="memItemLeft" align="right" valign="top"><a id="a72b0a1abe54664fca2955b3713c7eed3" name="a72b0a1abe54664fca2955b3713c7eed3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H5</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 5, text);</td></tr>
+<tr class="separator:a72b0a1abe54664fca2955b3713c7eed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815ba1bc54094688b2107351d3f078a6" id="r_a815ba1bc54094688b2107351d3f078a6"><td class="memItemLeft" align="right" valign="top"><a id="a815ba1bc54094688b2107351d3f078a6" name="a815ba1bc54094688b2107351d3f078a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H6</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 6, text);</td></tr>
+<tr class="separator:a815ba1bc54094688b2107351d3f078a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -258,370 +237,395 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a398d0151e1428b32f2dfd752ac69ca50" id="r_a398d0151e1428b32f2dfd752ac69ca50"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structTag.html">Tag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a398d0151e1428b32f2dfd752ac69ca50">MakeTag</a> (Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
-<tr class="separator:a398d0151e1428b32f2dfd752ac69ca50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc8625b154a1c0b40b3a1fd2b25b7d0" id="r_a0dc8625b154a1c0b40b3a1fd2b25b7d0"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structTag.html">Tag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc8625b154a1c0b40b3a1fd2b25b7d0">MakeTagAttr</a> (Cstr name, <a class="el" href="structAttribute.html">Attribute</a> *first,...)</td></tr>
-<tr class="separator:a0dc8625b154a1c0b40b3a1fd2b25b7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac55196a1e3af4134c691d7858752284" id="r_aac55196a1e3af4134c691d7858752284"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac55196a1e3af4134c691d7858752284">ClosingTag</a> (<a class="el" href="structTag.html">Tag</a> *tag)</td></tr>
-<tr class="separator:aac55196a1e3af4134c691d7858752284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893d4aba21aab7810a95ba715b556ad9" id="r_a893d4aba21aab7810a95ba715b556ad9"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a893d4aba21aab7810a95ba715b556ad9">TagToString</a> (<a class="el" href="structTag.html">Tag</a> *tag)</td></tr>
-<tr class="separator:a893d4aba21aab7810a95ba715b556ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6b0a0e3fde4e16b78100cae11f616f" id="r_a4a6b0a0e3fde4e16b78100cae11f616f"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6b0a0e3fde4e16b78100cae11f616f">CleanTag</a> (<a class="el" href="structTag.html">Tag</a> **tag)</td></tr>
-<tr class="separator:a4a6b0a0e3fde4e16b78100cae11f616f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f7efd89237bc1b33a033e76ebff3d1" id="r_af7f7efd89237bc1b33a033e76ebff3d1"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7f7efd89237bc1b33a033e76ebff3d1">Append</a> (char **buffer, Cstr text)</td></tr>
-<tr class="separator:af7f7efd89237bc1b33a033e76ebff3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73030256e621b53d57272686a36826e" id="r_ad73030256e621b53d57272686a36826e"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad73030256e621b53d57272686a36826e">Clean</a> (char **buffer)</td></tr>
-<tr class="separator:ad73030256e621b53d57272686a36826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f3540e7b9e9af788f8faf239f129910" id="r_a9f3540e7b9e9af788f8faf239f129910"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f3540e7b9e9af788f8faf239f129910">IntegrateFile</a> (char **buffer, Cstr path)</td></tr>
-<tr class="separator:a9f3540e7b9e9af788f8faf239f129910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92538f30934cad1d94a6c29849049a69" id="r_a92538f30934cad1d94a6c29849049a69"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttribute.html">Attribute</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92538f30934cad1d94a6c29849049a69">MakeAttribute</a> (AttributeName name, Cstr value)</td></tr>
-<tr class="separator:a92538f30934cad1d94a6c29849049a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32537bd71edeef2561a3cef3447b7e7" id="r_ab32537bd71edeef2561a3cef3447b7e7"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab32537bd71edeef2561a3cef3447b7e7">MakeAttributeList</a> (<a class="el" href="structAttribute.html">Attribute</a> *first,...)</td></tr>
-<tr class="separator:ab32537bd71edeef2561a3cef3447b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5584cf64361aaf83a9e52faa0777da" id="r_aae5584cf64361aaf83a9e52faa0777da"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae5584cf64361aaf83a9e52faa0777da">AttributeNameToString</a> (AttributeName attr)</td></tr>
-<tr class="separator:aae5584cf64361aaf83a9e52faa0777da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e2ad82b3ad1fc69c2d52122b7ce2e3" id="r_a81e2ad82b3ad1fc69c2d52122b7ce2e3"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81e2ad82b3ad1fc69c2d52122b7ce2e3">UseModifier</a> (<a class="el" href="structModifier.html">Modifier</a> modifier)</td></tr>
-<tr class="separator:a81e2ad82b3ad1fc69c2d52122b7ce2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e9ca7396bf529ad5c4e05ba59265164" id="r_a9e9ca7396bf529ad5c4e05ba59265164"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e9ca7396bf529ad5c4e05ba59265164">Head</a> (char **buffer, Cstr title, <a class="el" href="structTag.html">Tag</a> *first,...)</td></tr>
-<tr class="separator:a9e9ca7396bf529ad5c4e05ba59265164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae38f6fd1bd1bf2068fa33e89d98b0971" id="r_ae38f6fd1bd1bf2068fa33e89d98b0971"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38f6fd1bd1bf2068fa33e89d98b0971">HtmlStart</a> (char **buffer, Cstr lang)</td></tr>
-<tr class="separator:ae38f6fd1bd1bf2068fa33e89d98b0971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b96a7484af944d28fa93e12d5ebe7f0" id="r_a0b96a7484af944d28fa93e12d5ebe7f0"><td class="memItemLeft" align="right" valign="top"><a id="a0b96a7484af944d28fa93e12d5ebe7f0" name="a0b96a7484af944d28fa93e12d5ebe7f0"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>HtmlEnd</b> (char **buffer)</td></tr>
-<tr class="separator:a0b96a7484af944d28fa93e12d5ebe7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82011839f2b904cdd6030e30eb34c8fe" id="r_a82011839f2b904cdd6030e30eb34c8fe"><td class="memItemLeft" align="right" valign="top"><a id="a82011839f2b904cdd6030e30eb34c8fe" name="a82011839f2b904cdd6030e30eb34c8fe"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>BodyEnd</b> (char **buffer)</td></tr>
-<tr class="separator:a82011839f2b904cdd6030e30eb34c8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac275b9498883ed80ab0252591229f456" id="r_ac275b9498883ed80ab0252591229f456"><td class="memItemLeft" align="right" valign="top"><a id="ac275b9498883ed80ab0252591229f456" name="ac275b9498883ed80ab0252591229f456"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>BodyStart</b> (char **buffer)</td></tr>
-<tr class="separator:ac275b9498883ed80ab0252591229f456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2945dbf8c54e4c201996a624336157f9" id="r_a2945dbf8c54e4c201996a624336157f9"><td class="memItemLeft" align="right" valign="top"><a id="a2945dbf8c54e4c201996a624336157f9" name="a2945dbf8c54e4c201996a624336157f9"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptStart</b> (char **buffer)</td></tr>
-<tr class="separator:a2945dbf8c54e4c201996a624336157f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ecb006bc7e2eb7d9549151a9fa8a5a" id="r_a22ecb006bc7e2eb7d9549151a9fa8a5a"><td class="memItemLeft" align="right" valign="top"><a id="a22ecb006bc7e2eb7d9549151a9fa8a5a" name="a22ecb006bc7e2eb7d9549151a9fa8a5a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptEnd</b> (char **buffer)</td></tr>
-<tr class="separator:a22ecb006bc7e2eb7d9549151a9fa8a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28152fa38da3e65649770c335dd84f68" id="r_a28152fa38da3e65649770c335dd84f68"><td class="memItemLeft" align="right" valign="top"><a id="a28152fa38da3e65649770c335dd84f68" name="a28152fa38da3e65649770c335dd84f68"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>StyleStart</b> (char **buffer)</td></tr>
-<tr class="separator:a28152fa38da3e65649770c335dd84f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74021afb31caa26e23b8925a0861bbf" id="r_ab74021afb31caa26e23b8925a0861bbf"><td class="memItemLeft" align="right" valign="top"><a id="ab74021afb31caa26e23b8925a0861bbf" name="ab74021afb31caa26e23b8925a0861bbf"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>StyleEnd</b> (char **buffer)</td></tr>
-<tr class="separator:ab74021afb31caa26e23b8925a0861bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8455c334ee42157dec0faa0eea20cc15" id="r_a8455c334ee42157dec0faa0eea20cc15"><td class="memItemLeft" align="right" valign="top"><a id="a8455c334ee42157dec0faa0eea20cc15" name="a8455c334ee42157dec0faa0eea20cc15"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>DivStart</b> (char **buffer)</td></tr>
-<tr class="separator:a8455c334ee42157dec0faa0eea20cc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af10ad7f69e237cd2df02d469c5144e56" id="r_af10ad7f69e237cd2df02d469c5144e56"><td class="memItemLeft" align="right" valign="top"><a id="af10ad7f69e237cd2df02d469c5144e56" name="af10ad7f69e237cd2df02d469c5144e56"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>DivEnd</b> (char **buffer)</td></tr>
-<tr class="separator:af10ad7f69e237cd2df02d469c5144e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a080d663f9e4c4ff5d76062aa5e87d54d" id="r_a080d663f9e4c4ff5d76062aa5e87d54d"><td class="memItemLeft" align="right" valign="top"><a id="a080d663f9e4c4ff5d76062aa5e87d54d" name="a080d663f9e4c4ff5d76062aa5e87d54d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Block</b> (char **buffer, <a class="el" href="structTag.html">Tag</a> *tag, BlockContents contents)</td></tr>
-<tr class="separator:a080d663f9e4c4ff5d76062aa5e87d54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af35551eed73e5eb5c36267ee7de2643c" id="r_af35551eed73e5eb5c36267ee7de2643c"><td class="memItemLeft" align="right" valign="top"><a id="af35551eed73e5eb5c36267ee7de2643c" name="af35551eed73e5eb5c36267ee7de2643c"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>BlockAttr</b> (char **buffer, Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:af35551eed73e5eb5c36267ee7de2643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38da5ba54234f847af5fdf31884e5412" id="r_a38da5ba54234f847af5fdf31884e5412"><td class="memItemLeft" align="right" valign="top"><a id="a38da5ba54234f847af5fdf31884e5412" name="a38da5ba54234f847af5fdf31884e5412"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>InlineBlock</b> (char **buffer, Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a38da5ba54234f847af5fdf31884e5412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af432198876a1946f176bbaaf2e9a8c02" id="r_af432198876a1946f176bbaaf2e9a8c02"><td class="memItemLeft" align="right" valign="top"><a id="af432198876a1946f176bbaaf2e9a8c02" name="af432198876a1946f176bbaaf2e9a8c02"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Abbr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:af432198876a1946f176bbaaf2e9a8c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2403a6578bad97de4b7cecd5927dbb02" id="r_a2403a6578bad97de4b7cecd5927dbb02"><td class="memItemLeft" align="right" valign="top"><a id="a2403a6578bad97de4b7cecd5927dbb02" name="a2403a6578bad97de4b7cecd5927dbb02"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Address</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a2403a6578bad97de4b7cecd5927dbb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceaf8d60f8ea8e1d51819d202e18b107" id="r_aceaf8d60f8ea8e1d51819d202e18b107"><td class="memItemLeft" align="right" valign="top"><a id="aceaf8d60f8ea8e1d51819d202e18b107" name="aceaf8d60f8ea8e1d51819d202e18b107"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Anchor</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:aceaf8d60f8ea8e1d51819d202e18b107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7649d59830ab39c834949eeaf95cbd7" id="r_ad7649d59830ab39c834949eeaf95cbd7"><td class="memItemLeft" align="right" valign="top"><a id="ad7649d59830ab39c834949eeaf95cbd7" name="ad7649d59830ab39c834949eeaf95cbd7"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>AnchorBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ad7649d59830ab39c834949eeaf95cbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3398db5630ec4c9b4700ea16972752" id="r_a6d3398db5630ec4c9b4700ea16972752"><td class="memItemLeft" align="right" valign="top"><a id="a6d3398db5630ec4c9b4700ea16972752" name="a6d3398db5630ec4c9b4700ea16972752"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Area</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a6d3398db5630ec4c9b4700ea16972752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4648979e9966dc1c4359175c744a3613" id="r_a4648979e9966dc1c4359175c744a3613"><td class="memItemLeft" align="right" valign="top"><a id="a4648979e9966dc1c4359175c744a3613" name="a4648979e9966dc1c4359175c744a3613"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Article</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a4648979e9966dc1c4359175c744a3613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21620e1815a607a8d3fd672526b46ecf" id="r_a21620e1815a607a8d3fd672526b46ecf"><td class="memItemLeft" align="right" valign="top"><a id="a21620e1815a607a8d3fd672526b46ecf" name="a21620e1815a607a8d3fd672526b46ecf"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Aside</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a21620e1815a607a8d3fd672526b46ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae830b0b8c3ad00e1a7d15032887599fb" id="r_ae830b0b8c3ad00e1a7d15032887599fb"><td class="memItemLeft" align="right" valign="top"><a id="ae830b0b8c3ad00e1a7d15032887599fb" name="ae830b0b8c3ad00e1a7d15032887599fb"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Audio</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ae830b0b8c3ad00e1a7d15032887599fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688dc71de58b12475b5e119a9f0bd2e9" id="r_a688dc71de58b12475b5e119a9f0bd2e9"><td class="memItemLeft" align="right" valign="top"><a id="a688dc71de58b12475b5e119a9f0bd2e9" name="a688dc71de58b12475b5e119a9f0bd2e9"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>B</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a688dc71de58b12475b5e119a9f0bd2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95bd10e0b315de4b07510f9459bd260" id="r_ac95bd10e0b315de4b07510f9459bd260"><td class="memItemLeft" align="right" valign="top"><a id="ac95bd10e0b315de4b07510f9459bd260" name="ac95bd10e0b315de4b07510f9459bd260"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Bdi</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:ac95bd10e0b315de4b07510f9459bd260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf023237f5c2b235c64c6fb9ad8daa0" id="r_a7bf023237f5c2b235c64c6fb9ad8daa0"><td class="memItemLeft" align="right" valign="top"><a id="a7bf023237f5c2b235c64c6fb9ad8daa0" name="a7bf023237f5c2b235c64c6fb9ad8daa0"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Bdo</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a7bf023237f5c2b235c64c6fb9ad8daa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29092305da15986f2f997c235d7882b5" id="r_a29092305da15986f2f997c235d7882b5"><td class="memItemLeft" align="right" valign="top"><a id="a29092305da15986f2f997c235d7882b5" name="a29092305da15986f2f997c235d7882b5"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Blockquote</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a29092305da15986f2f997c235d7882b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac492d3338d0ae604f5d5ca9c35449d21" id="r_ac492d3338d0ae604f5d5ca9c35449d21"><td class="memItemLeft" align="right" valign="top"><a id="ac492d3338d0ae604f5d5ca9c35449d21" name="ac492d3338d0ae604f5d5ca9c35449d21"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Bold</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:ac492d3338d0ae604f5d5ca9c35449d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3964dbac5836503af4950be1c8e5f8e7" id="r_a3964dbac5836503af4950be1c8e5f8e7"><td class="memItemLeft" align="right" valign="top"><a id="a3964dbac5836503af4950be1c8e5f8e7" name="a3964dbac5836503af4950be1c8e5f8e7"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Button</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3964dbac5836503af4950be1c8e5f8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa900b5bb0884c75c3923f917f4fb4723" id="r_aa900b5bb0884c75c3923f917f4fb4723"><td class="memItemLeft" align="right" valign="top"><a id="aa900b5bb0884c75c3923f917f4fb4723" name="aa900b5bb0884c75c3923f917f4fb4723"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:aa900b5bb0884c75c3923f917f4fb4723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71692ad5ced7272a4e725200affdcb6d" id="r_a71692ad5ced7272a4e725200affdcb6d"><td class="memItemLeft" align="right" valign="top"><a id="a71692ad5ced7272a4e725200affdcb6d" name="a71692ad5ced7272a4e725200affdcb6d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a71692ad5ced7272a4e725200affdcb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a409e766cea210769fb8c097220b73de1" id="r_a409e766cea210769fb8c097220b73de1"><td class="memItemLeft" align="right" valign="top"><a id="a409e766cea210769fb8c097220b73de1" name="a409e766cea210769fb8c097220b73de1"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Caption</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a409e766cea210769fb8c097220b73de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14aa3f5000eb5f9200e88421b167bb9a" id="r_a14aa3f5000eb5f9200e88421b167bb9a"><td class="memItemLeft" align="right" valign="top"><a id="a14aa3f5000eb5f9200e88421b167bb9a" name="a14aa3f5000eb5f9200e88421b167bb9a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Cite</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a14aa3f5000eb5f9200e88421b167bb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b26a5bfae10df4dc7bb9c63ea417142" id="r_a6b26a5bfae10df4dc7bb9c63ea417142"><td class="memItemLeft" align="right" valign="top"><a id="a6b26a5bfae10df4dc7bb9c63ea417142" name="a6b26a5bfae10df4dc7bb9c63ea417142"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Code</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a6b26a5bfae10df4dc7bb9c63ea417142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce9c6cb2982f01ee83274039becf840" id="r_a2ce9c6cb2982f01ee83274039becf840"><td class="memItemLeft" align="right" valign="top"><a id="a2ce9c6cb2982f01ee83274039becf840" name="a2ce9c6cb2982f01ee83274039becf840"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Col</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a2ce9c6cb2982f01ee83274039becf840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ba4d588a0a9fd75c4962a4f556afd0" id="r_a59ba4d588a0a9fd75c4962a4f556afd0"><td class="memItemLeft" align="right" valign="top"><a id="a59ba4d588a0a9fd75c4962a4f556afd0" name="a59ba4d588a0a9fd75c4962a4f556afd0"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Colgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a59ba4d588a0a9fd75c4962a4f556afd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa263b7fb024e8a1d9f7c386020eee176" id="r_aa263b7fb024e8a1d9f7c386020eee176"><td class="memItemLeft" align="right" valign="top"><a id="aa263b7fb024e8a1d9f7c386020eee176" name="aa263b7fb024e8a1d9f7c386020eee176"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Data</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:aa263b7fb024e8a1d9f7c386020eee176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b0272f5d4b4513d6f720285da2eb9b" id="r_a66b0272f5d4b4513d6f720285da2eb9b"><td class="memItemLeft" align="right" valign="top"><a id="a66b0272f5d4b4513d6f720285da2eb9b" name="a66b0272f5d4b4513d6f720285da2eb9b"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Datalist</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a66b0272f5d4b4513d6f720285da2eb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686468f02080913d5b07b688e1b220aa" id="r_a686468f02080913d5b07b688e1b220aa"><td class="memItemLeft" align="right" valign="top"><a id="a686468f02080913d5b07b688e1b220aa" name="a686468f02080913d5b07b688e1b220aa"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Dd</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a686468f02080913d5b07b688e1b220aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40263a8b085946d526002a0ccca18933" id="r_a40263a8b085946d526002a0ccca18933"><td class="memItemLeft" align="right" valign="top"><a id="a40263a8b085946d526002a0ccca18933" name="a40263a8b085946d526002a0ccca18933"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Del</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a40263a8b085946d526002a0ccca18933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bb7a8dca179e914f3ae5fbfe42bbdf1" id="r_a1bb7a8dca179e914f3ae5fbfe42bbdf1"><td class="memItemLeft" align="right" valign="top"><a id="a1bb7a8dca179e914f3ae5fbfe42bbdf1" name="a1bb7a8dca179e914f3ae5fbfe42bbdf1"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Details</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a1bb7a8dca179e914f3ae5fbfe42bbdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8706443b1ab874fff23bc3ad3d2a4a63" id="r_a8706443b1ab874fff23bc3ad3d2a4a63"><td class="memItemLeft" align="right" valign="top"><a id="a8706443b1ab874fff23bc3ad3d2a4a63" name="a8706443b1ab874fff23bc3ad3d2a4a63"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Dfn</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a8706443b1ab874fff23bc3ad3d2a4a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190c1883dce644a23d1265d92b889ace" id="r_a190c1883dce644a23d1265d92b889ace"><td class="memItemLeft" align="right" valign="top"><a id="a190c1883dce644a23d1265d92b889ace" name="a190c1883dce644a23d1265d92b889ace"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Dialog</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a190c1883dce644a23d1265d92b889ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3586cc2a31becdae77668b860469f785" id="r_a3586cc2a31becdae77668b860469f785"><td class="memItemLeft" align="right" valign="top"><a id="a3586cc2a31becdae77668b860469f785" name="a3586cc2a31becdae77668b860469f785"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Div</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a3586cc2a31becdae77668b860469f785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0df28c96694a4196eb63ab5c34acc82" id="r_ab0df28c96694a4196eb63ab5c34acc82"><td class="memItemLeft" align="right" valign="top"><a id="ab0df28c96694a4196eb63ab5c34acc82" name="ab0df28c96694a4196eb63ab5c34acc82"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Dl</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ab0df28c96694a4196eb63ab5c34acc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdec085a749603bec1b1a15fd58f595a" id="r_afdec085a749603bec1b1a15fd58f595a"><td class="memItemLeft" align="right" valign="top"><a id="afdec085a749603bec1b1a15fd58f595a" name="afdec085a749603bec1b1a15fd58f595a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Dt</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:afdec085a749603bec1b1a15fd58f595a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217d92bd528916572edf001a09a8c506" id="r_a217d92bd528916572edf001a09a8c506"><td class="memItemLeft" align="right" valign="top"><a id="a217d92bd528916572edf001a09a8c506" name="a217d92bd528916572edf001a09a8c506"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Em</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a217d92bd528916572edf001a09a8c506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193a5416671ee4901f099deacc438276" id="r_a193a5416671ee4901f099deacc438276"><td class="memItemLeft" align="right" valign="top"><a id="a193a5416671ee4901f099deacc438276" name="a193a5416671ee4901f099deacc438276"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Embed</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a193a5416671ee4901f099deacc438276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0fa8ff6f5b5e678b971875aeee8de83" id="r_ad0fa8ff6f5b5e678b971875aeee8de83"><td class="memItemLeft" align="right" valign="top"><a id="ad0fa8ff6f5b5e678b971875aeee8de83" name="ad0fa8ff6f5b5e678b971875aeee8de83"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Fieldset</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ad0fa8ff6f5b5e678b971875aeee8de83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacae1b23baf5b69fdfde93ce54442982" id="r_aacae1b23baf5b69fdfde93ce54442982"><td class="memItemLeft" align="right" valign="top"><a id="aacae1b23baf5b69fdfde93ce54442982" name="aacae1b23baf5b69fdfde93ce54442982"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Figcaption</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:aacae1b23baf5b69fdfde93ce54442982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b55b6b1bc46e15a7c713ad234912f18" id="r_a7b55b6b1bc46e15a7c713ad234912f18"><td class="memItemLeft" align="right" valign="top"><a id="a7b55b6b1bc46e15a7c713ad234912f18" name="a7b55b6b1bc46e15a7c713ad234912f18"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Figure</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a7b55b6b1bc46e15a7c713ad234912f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a0763e62c8b472ceb1884c1705d343" id="r_ac9a0763e62c8b472ceb1884c1705d343"><td class="memItemLeft" align="right" valign="top"><a id="ac9a0763e62c8b472ceb1884c1705d343" name="ac9a0763e62c8b472ceb1884c1705d343"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Footer</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ac9a0763e62c8b472ceb1884c1705d343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe1b7f2f5e97bddec635860e033ea5d" id="r_a8fe1b7f2f5e97bddec635860e033ea5d"><td class="memItemLeft" align="right" valign="top"><a id="a8fe1b7f2f5e97bddec635860e033ea5d" name="a8fe1b7f2f5e97bddec635860e033ea5d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Form</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a8fe1b7f2f5e97bddec635860e033ea5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ea80d820a9f4f2b6c4e5629bb13f38" id="r_a23ea80d820a9f4f2b6c4e5629bb13f38"><td class="memItemLeft" align="right" valign="top"><a id="a23ea80d820a9f4f2b6c4e5629bb13f38" name="a23ea80d820a9f4f2b6c4e5629bb13f38"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Header</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a23ea80d820a9f4f2b6c4e5629bb13f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2835c78cfd46d3de7c2fbba434f494f5" id="r_a2835c78cfd46d3de7c2fbba434f494f5"><td class="memItemLeft" align="right" valign="top"><a id="a2835c78cfd46d3de7c2fbba434f494f5" name="a2835c78cfd46d3de7c2fbba434f494f5"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Heading</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, size_t size, Cstr text)</td></tr>
-<tr class="separator:a2835c78cfd46d3de7c2fbba434f494f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b3dde16160e332f2582ac7f3ad81b9" id="r_a03b3dde16160e332f2582ac7f3ad81b9"><td class="memItemLeft" align="right" valign="top"><a id="a03b3dde16160e332f2582ac7f3ad81b9" name="a03b3dde16160e332f2582ac7f3ad81b9"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Hgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a03b3dde16160e332f2582ac7f3ad81b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bcfaa7f5a8199a36706d33470269816" id="r_a3bcfaa7f5a8199a36706d33470269816"><td class="memItemLeft" align="right" valign="top"><a id="a3bcfaa7f5a8199a36706d33470269816" name="a3bcfaa7f5a8199a36706d33470269816"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>I</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3bcfaa7f5a8199a36706d33470269816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b091bcb41477d24d752f1d6f3fdf6ec" id="r_a4b091bcb41477d24d752f1d6f3fdf6ec"><td class="memItemLeft" align="right" valign="top"><a id="a4b091bcb41477d24d752f1d6f3fdf6ec" name="a4b091bcb41477d24d752f1d6f3fdf6ec"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Iframe</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a4b091bcb41477d24d752f1d6f3fdf6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08192f4dfca1f803d5003d468470a463" id="r_a08192f4dfca1f803d5003d468470a463"><td class="memItemLeft" align="right" valign="top"><a id="a08192f4dfca1f803d5003d468470a463" name="a08192f4dfca1f803d5003d468470a463"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Ins</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a08192f4dfca1f803d5003d468470a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00509e256d6882cee166489a8a135a7f" id="r_a00509e256d6882cee166489a8a135a7f"><td class="memItemLeft" align="right" valign="top"><a id="a00509e256d6882cee166489a8a135a7f" name="a00509e256d6882cee166489a8a135a7f"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Kbd</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a00509e256d6882cee166489a8a135a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2aeb6784c644be7c99dad6f0108b79" id="r_aba2aeb6784c644be7c99dad6f0108b79"><td class="memItemLeft" align="right" valign="top"><a id="aba2aeb6784c644be7c99dad6f0108b79" name="aba2aeb6784c644be7c99dad6f0108b79"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Label</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:aba2aeb6784c644be7c99dad6f0108b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc91a21360b36ea660a55442bd36b8d" id="r_acdc91a21360b36ea660a55442bd36b8d"><td class="memItemLeft" align="right" valign="top"><a id="acdc91a21360b36ea660a55442bd36b8d" name="acdc91a21360b36ea660a55442bd36b8d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Legend</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:acdc91a21360b36ea660a55442bd36b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec87befece0ab583208896273b02e0b" id="r_a8ec87befece0ab583208896273b02e0b"><td class="memItemLeft" align="right" valign="top"><a id="a8ec87befece0ab583208896273b02e0b" name="a8ec87befece0ab583208896273b02e0b"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Li</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a8ec87befece0ab583208896273b02e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd02624976daece19c70241f6814e97" id="r_a2fd02624976daece19c70241f6814e97"><td class="memItemLeft" align="right" valign="top"><a id="a2fd02624976daece19c70241f6814e97" name="a2fd02624976daece19c70241f6814e97"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>LiBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a2fd02624976daece19c70241f6814e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac806b48666cce67796eefc8b4fc1231a" id="r_ac806b48666cce67796eefc8b4fc1231a"><td class="memItemLeft" align="right" valign="top"><a id="ac806b48666cce67796eefc8b4fc1231a" name="ac806b48666cce67796eefc8b4fc1231a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Main</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ac806b48666cce67796eefc8b4fc1231a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab050c5e1de3fd8239083da1ee326f8ca" id="r_ab050c5e1de3fd8239083da1ee326f8ca"><td class="memItemLeft" align="right" valign="top"><a id="ab050c5e1de3fd8239083da1ee326f8ca" name="ab050c5e1de3fd8239083da1ee326f8ca"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ab050c5e1de3fd8239083da1ee326f8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5c415f95915a21e8d16e67685d9229" id="r_aab5c415f95915a21e8d16e67685d9229"><td class="memItemLeft" align="right" valign="top"><a id="aab5c415f95915a21e8d16e67685d9229" name="aab5c415f95915a21e8d16e67685d9229"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Mark</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:aab5c415f95915a21e8d16e67685d9229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a407c158bfefa6166859c06ac67ebd773" id="r_a407c158bfefa6166859c06ac67ebd773"><td class="memItemLeft" align="right" valign="top"><a id="a407c158bfefa6166859c06ac67ebd773" name="a407c158bfefa6166859c06ac67ebd773"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Menu</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a407c158bfefa6166859c06ac67ebd773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91048a7f30b9ecfc912ccf6a913ffb9" id="r_ab91048a7f30b9ecfc912ccf6a913ffb9"><td class="memItemLeft" align="right" valign="top"><a id="ab91048a7f30b9ecfc912ccf6a913ffb9" name="ab91048a7f30b9ecfc912ccf6a913ffb9"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Meter</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:ab91048a7f30b9ecfc912ccf6a913ffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6d422bad6a7dead70ec35905395ec7" id="r_afc6d422bad6a7dead70ec35905395ec7"><td class="memItemLeft" align="right" valign="top"><a id="afc6d422bad6a7dead70ec35905395ec7" name="afc6d422bad6a7dead70ec35905395ec7"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Nav</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:afc6d422bad6a7dead70ec35905395ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cbdb3a50c166751cbe0adea38d4c02a" id="r_a1cbdb3a50c166751cbe0adea38d4c02a"><td class="memItemLeft" align="right" valign="top"><a id="a1cbdb3a50c166751cbe0adea38d4c02a" name="a1cbdb3a50c166751cbe0adea38d4c02a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Noscript</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a1cbdb3a50c166751cbe0adea38d4c02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59501165273bed0c65177f9a73e6c83" id="r_af59501165273bed0c65177f9a73e6c83"><td class="memItemLeft" align="right" valign="top"><a id="af59501165273bed0c65177f9a73e6c83" name="af59501165273bed0c65177f9a73e6c83"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:af59501165273bed0c65177f9a73e6c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d57bd754ccda534b804dde184063474" id="r_a7d57bd754ccda534b804dde184063474"><td class="memItemLeft" align="right" valign="top"><a id="a7d57bd754ccda534b804dde184063474" name="a7d57bd754ccda534b804dde184063474"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Ol</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a7d57bd754ccda534b804dde184063474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae67ac81312688cfbc4121b304a0c9c29" id="r_ae67ac81312688cfbc4121b304a0c9c29"><td class="memItemLeft" align="right" valign="top"><a id="ae67ac81312688cfbc4121b304a0c9c29" name="ae67ac81312688cfbc4121b304a0c9c29"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Optgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ae67ac81312688cfbc4121b304a0c9c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dae236c83d149c5e0b04d44129eadfc" id="r_a3dae236c83d149c5e0b04d44129eadfc"><td class="memItemLeft" align="right" valign="top"><a id="a3dae236c83d149c5e0b04d44129eadfc" name="a3dae236c83d149c5e0b04d44129eadfc"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3dae236c83d149c5e0b04d44129eadfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3507e78ba54bc4d66a981f82b2e1d81c" id="r_a3507e78ba54bc4d66a981f82b2e1d81c"><td class="memItemLeft" align="right" valign="top"><a id="a3507e78ba54bc4d66a981f82b2e1d81c" name="a3507e78ba54bc4d66a981f82b2e1d81c"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3507e78ba54bc4d66a981f82b2e1d81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f30e90030e680eaae8b2b388356b90" id="r_a92f30e90030e680eaae8b2b388356b90"><td class="memItemLeft" align="right" valign="top"><a id="a92f30e90030e680eaae8b2b388356b90" name="a92f30e90030e680eaae8b2b388356b90"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Paragraph</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a92f30e90030e680eaae8b2b388356b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b4f9d20487450cbdb419a420581e573" id="r_a8b4f9d20487450cbdb419a420581e573"><td class="memItemLeft" align="right" valign="top"><a id="a8b4f9d20487450cbdb419a420581e573" name="a8b4f9d20487450cbdb419a420581e573"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>ParagraphBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a8b4f9d20487450cbdb419a420581e573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e13fcbe8769f6295aae8a07f2e73589" id="r_a6e13fcbe8769f6295aae8a07f2e73589"><td class="memItemLeft" align="right" valign="top"><a id="a6e13fcbe8769f6295aae8a07f2e73589" name="a6e13fcbe8769f6295aae8a07f2e73589"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Param</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a6e13fcbe8769f6295aae8a07f2e73589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d3d91e8249a4fd6fef0d76d45c7d663" id="r_a2d3d91e8249a4fd6fef0d76d45c7d663"><td class="memItemLeft" align="right" valign="top"><a id="a2d3d91e8249a4fd6fef0d76d45c7d663" name="a2d3d91e8249a4fd6fef0d76d45c7d663"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Picture</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a2d3d91e8249a4fd6fef0d76d45c7d663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37747b4f97c2ca30fd41e9540d8ea593" id="r_a37747b4f97c2ca30fd41e9540d8ea593"><td class="memItemLeft" align="right" valign="top"><a id="a37747b4f97c2ca30fd41e9540d8ea593" name="a37747b4f97c2ca30fd41e9540d8ea593"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Pre</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a37747b4f97c2ca30fd41e9540d8ea593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e3aaae9586fed00d6df6b64a14bb8d" id="r_ab4e3aaae9586fed00d6df6b64a14bb8d"><td class="memItemLeft" align="right" valign="top"><a id="ab4e3aaae9586fed00d6df6b64a14bb8d" name="ab4e3aaae9586fed00d6df6b64a14bb8d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Progress</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:ab4e3aaae9586fed00d6df6b64a14bb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956c7f4645ab88e2561a4e72510a6367" id="r_a956c7f4645ab88e2561a4e72510a6367"><td class="memItemLeft" align="right" valign="top"><a id="a956c7f4645ab88e2561a4e72510a6367" name="a956c7f4645ab88e2561a4e72510a6367"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Q</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a956c7f4645ab88e2561a4e72510a6367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81989f968cf22b1523862ccb8c8f9e3d" id="r_a81989f968cf22b1523862ccb8c8f9e3d"><td class="memItemLeft" align="right" valign="top"><a id="a81989f968cf22b1523862ccb8c8f9e3d" name="a81989f968cf22b1523862ccb8c8f9e3d"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Rp</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a81989f968cf22b1523862ccb8c8f9e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be690e133049b4e3fa200ec18dc48fd" id="r_a5be690e133049b4e3fa200ec18dc48fd"><td class="memItemLeft" align="right" valign="top"><a id="a5be690e133049b4e3fa200ec18dc48fd" name="a5be690e133049b4e3fa200ec18dc48fd"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Rt</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a5be690e133049b4e3fa200ec18dc48fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f0a2ab3872479b530394054deed6d53" id="r_a3f0a2ab3872479b530394054deed6d53"><td class="memItemLeft" align="right" valign="top"><a id="a3f0a2ab3872479b530394054deed6d53" name="a3f0a2ab3872479b530394054deed6d53"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Ruby</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a3f0a2ab3872479b530394054deed6d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff1abdf6989806fdb07a4db68fda6ef" id="r_a3ff1abdf6989806fdb07a4db68fda6ef"><td class="memItemLeft" align="right" valign="top"><a id="a3ff1abdf6989806fdb07a4db68fda6ef" name="a3ff1abdf6989806fdb07a4db68fda6ef"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>S</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3ff1abdf6989806fdb07a4db68fda6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fee1469eba7f59b847fd22dc87fb217" id="r_a8fee1469eba7f59b847fd22dc87fb217"><td class="memItemLeft" align="right" valign="top"><a id="a8fee1469eba7f59b847fd22dc87fb217" name="a8fee1469eba7f59b847fd22dc87fb217"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Samp</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a8fee1469eba7f59b847fd22dc87fb217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fae8ff2e24a194ff56e5f1164d1fd4" id="r_a04fae8ff2e24a194ff56e5f1164d1fd4"><td class="memItemLeft" align="right" valign="top"><a id="a04fae8ff2e24a194ff56e5f1164d1fd4" name="a04fae8ff2e24a194ff56e5f1164d1fd4"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Script</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a04fae8ff2e24a194ff56e5f1164d1fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa01419ced32e79bb8ab85844d973c8" id="r_acfa01419ced32e79bb8ab85844d973c8"><td class="memItemLeft" align="right" valign="top"><a id="acfa01419ced32e79bb8ab85844d973c8" name="acfa01419ced32e79bb8ab85844d973c8"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Search</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:acfa01419ced32e79bb8ab85844d973c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa752f437463d5ae0006d0ecee2912fbf" id="r_aa752f437463d5ae0006d0ecee2912fbf"><td class="memItemLeft" align="right" valign="top"><a id="aa752f437463d5ae0006d0ecee2912fbf" name="aa752f437463d5ae0006d0ecee2912fbf"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Section</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:aa752f437463d5ae0006d0ecee2912fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad912f42d7d433b579f40b605936511a3" id="r_ad912f42d7d433b579f40b605936511a3"><td class="memItemLeft" align="right" valign="top"><a id="ad912f42d7d433b579f40b605936511a3" name="ad912f42d7d433b579f40b605936511a3"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ad912f42d7d433b579f40b605936511a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd725573594571bf3b0a08b7ec919b4" id="r_a8fd725573594571bf3b0a08b7ec919b4"><td class="memItemLeft" align="right" valign="top"><a id="a8fd725573594571bf3b0a08b7ec919b4" name="a8fd725573594571bf3b0a08b7ec919b4"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Small</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a8fd725573594571bf3b0a08b7ec919b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc486f548b7e45e40875a46cdaaf8a4b" id="r_afc486f548b7e45e40875a46cdaaf8a4b"><td class="memItemLeft" align="right" valign="top"><a id="afc486f548b7e45e40875a46cdaaf8a4b" name="afc486f548b7e45e40875a46cdaaf8a4b"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Span</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:afc486f548b7e45e40875a46cdaaf8a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51efd8ec5dba56105728c82bd4ad1626" id="r_a51efd8ec5dba56105728c82bd4ad1626"><td class="memItemLeft" align="right" valign="top"><a id="a51efd8ec5dba56105728c82bd4ad1626" name="a51efd8ec5dba56105728c82bd4ad1626"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Strong</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a51efd8ec5dba56105728c82bd4ad1626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5752920f1cc16f3eeec7566d9f0670" id="r_aab5752920f1cc16f3eeec7566d9f0670"><td class="memItemLeft" align="right" valign="top"><a id="aab5752920f1cc16f3eeec7566d9f0670" name="aab5752920f1cc16f3eeec7566d9f0670"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:aab5752920f1cc16f3eeec7566d9f0670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36072e49e03e3aca7387d5b2fa6a4087" id="r_a36072e49e03e3aca7387d5b2fa6a4087"><td class="memItemLeft" align="right" valign="top"><a id="a36072e49e03e3aca7387d5b2fa6a4087" name="a36072e49e03e3aca7387d5b2fa6a4087"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Sub</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a36072e49e03e3aca7387d5b2fa6a4087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11555c4a797726b0a5395da0a2af3900" id="r_a11555c4a797726b0a5395da0a2af3900"><td class="memItemLeft" align="right" valign="top"><a id="a11555c4a797726b0a5395da0a2af3900" name="a11555c4a797726b0a5395da0a2af3900"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Summary</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a11555c4a797726b0a5395da0a2af3900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e132581aece30c8bce4dcf898b9695b" id="r_a3e132581aece30c8bce4dcf898b9695b"><td class="memItemLeft" align="right" valign="top"><a id="a3e132581aece30c8bce4dcf898b9695b" name="a3e132581aece30c8bce4dcf898b9695b"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Sup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a3e132581aece30c8bce4dcf898b9695b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad008677f3c9b634c613780862f7af69a" id="r_ad008677f3c9b634c613780862f7af69a"><td class="memItemLeft" align="right" valign="top"><a id="ad008677f3c9b634c613780862f7af69a" name="ad008677f3c9b634c613780862f7af69a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Svg</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ad008677f3c9b634c613780862f7af69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f2d420b2978b6a3c4c1668deea4b076" id="r_a4f2d420b2978b6a3c4c1668deea4b076"><td class="memItemLeft" align="right" valign="top"><a id="a4f2d420b2978b6a3c4c1668deea4b076" name="a4f2d420b2978b6a3c4c1668deea4b076"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Table</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a4f2d420b2978b6a3c4c1668deea4b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33d240f81dc112f08e11420dbe56f4e" id="r_ac33d240f81dc112f08e11420dbe56f4e"><td class="memItemLeft" align="right" valign="top"><a id="ac33d240f81dc112f08e11420dbe56f4e" name="ac33d240f81dc112f08e11420dbe56f4e"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Tbody</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ac33d240f81dc112f08e11420dbe56f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ffbdf2a6a4173c88dc09ab7d9f6922e" id="r_a8ffbdf2a6a4173c88dc09ab7d9f6922e"><td class="memItemLeft" align="right" valign="top"><a id="a8ffbdf2a6a4173c88dc09ab7d9f6922e" name="a8ffbdf2a6a4173c88dc09ab7d9f6922e"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Td</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a8ffbdf2a6a4173c88dc09ab7d9f6922e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cdba14328d615351c4ade9abc401401" id="r_a4cdba14328d615351c4ade9abc401401"><td class="memItemLeft" align="right" valign="top"><a id="a4cdba14328d615351c4ade9abc401401" name="a4cdba14328d615351c4ade9abc401401"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Template</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a4cdba14328d615351c4ade9abc401401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add530c52f764ec36d44e438870b21453" id="r_add530c52f764ec36d44e438870b21453"><td class="memItemLeft" align="right" valign="top"><a id="add530c52f764ec36d44e438870b21453" name="add530c52f764ec36d44e438870b21453"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Textarea</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:add530c52f764ec36d44e438870b21453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff36f2427a945d7591f6f9c77055e58" id="r_a6ff36f2427a945d7591f6f9c77055e58"><td class="memItemLeft" align="right" valign="top"><a id="a6ff36f2427a945d7591f6f9c77055e58" name="a6ff36f2427a945d7591f6f9c77055e58"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Tfoot</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a6ff36f2427a945d7591f6f9c77055e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69274f0b30b5c56a9d92a064098dd91f" id="r_a69274f0b30b5c56a9d92a064098dd91f"><td class="memItemLeft" align="right" valign="top"><a id="a69274f0b30b5c56a9d92a064098dd91f" name="a69274f0b30b5c56a9d92a064098dd91f"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Th</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a69274f0b30b5c56a9d92a064098dd91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c26fe28c64ba2fc19c040d0656b9df4" id="r_a8c26fe28c64ba2fc19c040d0656b9df4"><td class="memItemLeft" align="right" valign="top"><a id="a8c26fe28c64ba2fc19c040d0656b9df4" name="a8c26fe28c64ba2fc19c040d0656b9df4"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Thead</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a8c26fe28c64ba2fc19c040d0656b9df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f5e84cc9e0f38abd0fd5c5fc9d022f" id="r_a33f5e84cc9e0f38abd0fd5c5fc9d022f"><td class="memItemLeft" align="right" valign="top"><a id="a33f5e84cc9e0f38abd0fd5c5fc9d022f" name="a33f5e84cc9e0f38abd0fd5c5fc9d022f"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Time</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a33f5e84cc9e0f38abd0fd5c5fc9d022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad403ae910faf84ae9c6ab817c9cf8d6a" id="r_ad403ae910faf84ae9c6ab817c9cf8d6a"><td class="memItemLeft" align="right" valign="top"><a id="ad403ae910faf84ae9c6ab817c9cf8d6a" name="ad403ae910faf84ae9c6ab817c9cf8d6a"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Tr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:ad403ae910faf84ae9c6ab817c9cf8d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44facfe8fa704d6b28d310b8df48615f" id="r_a44facfe8fa704d6b28d310b8df48615f"><td class="memItemLeft" align="right" valign="top"><a id="a44facfe8fa704d6b28d310b8df48615f" name="a44facfe8fa704d6b28d310b8df48615f"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>U</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a44facfe8fa704d6b28d310b8df48615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed892d1549d9e740d01faa21e3bf80ea" id="r_aed892d1549d9e740d01faa21e3bf80ea"><td class="memItemLeft" align="right" valign="top"><a id="aed892d1549d9e740d01faa21e3bf80ea" name="aed892d1549d9e740d01faa21e3bf80ea"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Ul</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:aed892d1549d9e740d01faa21e3bf80ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8156d34232fa9de37fceed68a75da67" id="r_af8156d34232fa9de37fceed68a75da67"><td class="memItemLeft" align="right" valign="top"><a id="af8156d34232fa9de37fceed68a75da67" name="af8156d34232fa9de37fceed68a75da67"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Var</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:af8156d34232fa9de37fceed68a75da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dc60dd0f9a6b027f573532ce4a0ce9" id="r_a44dc60dd0f9a6b027f573532ce4a0ce9"><td class="memItemLeft" align="right" valign="top"><a id="a44dc60dd0f9a6b027f573532ce4a0ce9" name="a44dc60dd0f9a6b027f573532ce4a0ce9"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Video</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
-<tr class="separator:a44dc60dd0f9a6b027f573532ce4a0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655805873a40b5b86427da6cee85aaf5" id="r_a655805873a40b5b86427da6cee85aaf5"><td class="memItemLeft" align="right" valign="top"><a id="a655805873a40b5b86427da6cee85aaf5" name="a655805873a40b5b86427da6cee85aaf5"></a>
-WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
-<tr class="separator:a655805873a40b5b86427da6cee85aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670a66f4378c32e12bd7399ce59770cb" id="r_a670a66f4378c32e12bd7399ce59770cb"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structTag.html">Tag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a670a66f4378c32e12bd7399ce59770cb">WEBC_MakeTag</a> (Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:a670a66f4378c32e12bd7399ce59770cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37855eabb600c11466d6864127d3db3" id="r_ae37855eabb600c11466d6864127d3db3"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structTag.html">Tag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae37855eabb600c11466d6864127d3db3">WEBC_MakeTagAttr</a> (Cstr name, <a class="el" href="structAttribute.html">Attribute</a> *first,...)</td></tr>
+<tr class="separator:ae37855eabb600c11466d6864127d3db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadb4db380b195d61ffa25de83dc86a1" id="r_acadb4db380b195d61ffa25de83dc86a1"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acadb4db380b195d61ffa25de83dc86a1">WEBC_ClosingTag</a> (<a class="el" href="structTag.html">Tag</a> *tag)</td></tr>
+<tr class="separator:acadb4db380b195d61ffa25de83dc86a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcf52c7753b398a271d0de6d7cc24e6" id="r_a6fcf52c7753b398a271d0de6d7cc24e6"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fcf52c7753b398a271d0de6d7cc24e6">WEBC_TagToString</a> (<a class="el" href="structTag.html">Tag</a> *tag)</td></tr>
+<tr class="separator:a6fcf52c7753b398a271d0de6d7cc24e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44764f66440b7c57a265259b284ed253" id="r_a44764f66440b7c57a265259b284ed253"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44764f66440b7c57a265259b284ed253">WEBC_CleanTag</a> (<a class="el" href="structTag.html">Tag</a> **tag)</td></tr>
+<tr class="separator:a44764f66440b7c57a265259b284ed253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc71db98daf3d80e67e6391c3ab4d45" id="r_a2fc71db98daf3d80e67e6391c3ab4d45"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc71db98daf3d80e67e6391c3ab4d45">WEBC_AppendLn</a> (char **buffer, Cstr text)</td></tr>
+<tr class="separator:a2fc71db98daf3d80e67e6391c3ab4d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae021b664b5d1206e187c1aa8deaf45f9" id="r_ae021b664b5d1206e187c1aa8deaf45f9"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae021b664b5d1206e187c1aa8deaf45f9">WEBC_Append</a> (char **buffer, Cstr text)</td></tr>
+<tr class="separator:ae021b664b5d1206e187c1aa8deaf45f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ec6a1585880819a8e74e480fd144d0" id="r_a59ec6a1585880819a8e74e480fd144d0"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59ec6a1585880819a8e74e480fd144d0">WEBC_Clean</a> (char **buffer)</td></tr>
+<tr class="separator:a59ec6a1585880819a8e74e480fd144d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7133115a31dada82c76678a0410f047" id="r_ae7133115a31dada82c76678a0410f047"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7133115a31dada82c76678a0410f047">WEBC_IntegrateFile</a> (char **buffer, Cstr path)</td></tr>
+<tr class="separator:ae7133115a31dada82c76678a0410f047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67effe9176b63ac091451074ec0f7575" id="r_a67effe9176b63ac091451074ec0f7575"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttribute.html">Attribute</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67effe9176b63ac091451074ec0f7575">WEBC_MakeAttribute</a> (AttributeName name, Cstr value)</td></tr>
+<tr class="separator:a67effe9176b63ac091451074ec0f7575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9713bcb54364cb7da23dbba687a9eebf" id="r_a9713bcb54364cb7da23dbba687a9eebf"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9713bcb54364cb7da23dbba687a9eebf">WEBC_MakeAttributeList</a> (<a class="el" href="structAttribute.html">Attribute</a> *first,...)</td></tr>
+<tr class="separator:a9713bcb54364cb7da23dbba687a9eebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac838c907589d0ccad3223375e501ddbd" id="r_ac838c907589d0ccad3223375e501ddbd"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac838c907589d0ccad3223375e501ddbd">WEBC_CleanAttributeList</a> (<a class="el" href="structAttributeList.html">AttributeList</a> list)</td></tr>
+<tr class="separator:ac838c907589d0ccad3223375e501ddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae622888e92c1660b6d9fffdf1d779467" id="r_ae622888e92c1660b6d9fffdf1d779467"><td class="memItemLeft" align="right" valign="top">WEBCAPI Cstr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae622888e92c1660b6d9fffdf1d779467">WEBC_AttributeNameToString</a> (AttributeName attr)</td></tr>
+<tr class="separator:ae622888e92c1660b6d9fffdf1d779467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9093539c7611230b3fb6ee61d8b4659a" id="r_a9093539c7611230b3fb6ee61d8b4659a"><td class="memItemLeft" align="right" valign="top">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9093539c7611230b3fb6ee61d8b4659a">WEBC_UseModifier</a> (<a class="el" href="structModifier.html">Modifier</a> modifier)</td></tr>
+<tr class="separator:a9093539c7611230b3fb6ee61d8b4659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d28ef5b62de9e142bd6f3f5a06840c" id="r_a91d28ef5b62de9e142bd6f3f5a06840c"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d28ef5b62de9e142bd6f3f5a06840c">WEBC_Head</a> (char **buffer, Cstr title, <a class="el" href="structTag.html">Tag</a> *first,...)</td></tr>
+<tr class="separator:a91d28ef5b62de9e142bd6f3f5a06840c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be6f40006ab29fc333be2d0780b2a16" id="r_a1be6f40006ab29fc333be2d0780b2a16"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1be6f40006ab29fc333be2d0780b2a16">WEBC_HtmlStart</a> (char **buffer, Cstr lang)</td></tr>
+<tr class="separator:a1be6f40006ab29fc333be2d0780b2a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a50b105ad51fbb1281a8f68dd81b7f8" id="r_a1a50b105ad51fbb1281a8f68dd81b7f8"><td class="memItemLeft" align="right" valign="top"><a id="a1a50b105ad51fbb1281a8f68dd81b7f8" name="a1a50b105ad51fbb1281a8f68dd81b7f8"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_HtmlEnd</b> (char **buffer)</td></tr>
+<tr class="separator:a1a50b105ad51fbb1281a8f68dd81b7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cf0437388ec9e126c5f7c41eda1038" id="r_ae0cf0437388ec9e126c5f7c41eda1038"><td class="memItemLeft" align="right" valign="top"><a id="ae0cf0437388ec9e126c5f7c41eda1038" name="ae0cf0437388ec9e126c5f7c41eda1038"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_BodyEnd</b> (char **buffer)</td></tr>
+<tr class="separator:ae0cf0437388ec9e126c5f7c41eda1038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2366e2818efa6bd2b6478c6335bb6296" id="r_a2366e2818efa6bd2b6478c6335bb6296"><td class="memItemLeft" align="right" valign="top"><a id="a2366e2818efa6bd2b6478c6335bb6296" name="a2366e2818efa6bd2b6478c6335bb6296"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_BodyStart</b> (char **buffer)</td></tr>
+<tr class="separator:a2366e2818efa6bd2b6478c6335bb6296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c383aacc42c66984730b4e4e549227f" id="r_a8c383aacc42c66984730b4e4e549227f"><td class="memItemLeft" align="right" valign="top"><a id="a8c383aacc42c66984730b4e4e549227f" name="a8c383aacc42c66984730b4e4e549227f"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_ScriptStart</b> (char **buffer)</td></tr>
+<tr class="separator:a8c383aacc42c66984730b4e4e549227f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8db811f9fab7982d1a09da164b9ca2" id="r_aaf8db811f9fab7982d1a09da164b9ca2"><td class="memItemLeft" align="right" valign="top"><a id="aaf8db811f9fab7982d1a09da164b9ca2" name="aaf8db811f9fab7982d1a09da164b9ca2"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_ScriptEnd</b> (char **buffer)</td></tr>
+<tr class="separator:aaf8db811f9fab7982d1a09da164b9ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418ff42f27dc33c7b37c9d29281277de" id="r_a418ff42f27dc33c7b37c9d29281277de"><td class="memItemLeft" align="right" valign="top"><a id="a418ff42f27dc33c7b37c9d29281277de" name="a418ff42f27dc33c7b37c9d29281277de"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_StyleStart</b> (char **buffer)</td></tr>
+<tr class="separator:a418ff42f27dc33c7b37c9d29281277de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d8ed79072d5146fc60eb9b6e37a634" id="r_a90d8ed79072d5146fc60eb9b6e37a634"><td class="memItemLeft" align="right" valign="top"><a id="a90d8ed79072d5146fc60eb9b6e37a634" name="a90d8ed79072d5146fc60eb9b6e37a634"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_StyleEnd</b> (char **buffer)</td></tr>
+<tr class="separator:a90d8ed79072d5146fc60eb9b6e37a634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd4d6eccfa87bd4fd0497385c4d6d13" id="r_a5bd4d6eccfa87bd4fd0497385c4d6d13"><td class="memItemLeft" align="right" valign="top"><a id="a5bd4d6eccfa87bd4fd0497385c4d6d13" name="a5bd4d6eccfa87bd4fd0497385c4d6d13"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_DivStart</b> (char **buffer)</td></tr>
+<tr class="separator:a5bd4d6eccfa87bd4fd0497385c4d6d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e022684feddb66c4802b8064b8ed204" id="r_a0e022684feddb66c4802b8064b8ed204"><td class="memItemLeft" align="right" valign="top"><a id="a0e022684feddb66c4802b8064b8ed204" name="a0e022684feddb66c4802b8064b8ed204"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_DivEnd</b> (char **buffer)</td></tr>
+<tr class="separator:a0e022684feddb66c4802b8064b8ed204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2094b2c9b4339e1b01a5367a3fe799" id="r_ace2094b2c9b4339e1b01a5367a3fe799"><td class="memItemLeft" align="right" valign="top"><a id="ace2094b2c9b4339e1b01a5367a3fe799" name="ace2094b2c9b4339e1b01a5367a3fe799"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Block</b> (char **buffer, <a class="el" href="structTag.html">Tag</a> *tag, BlockContents contents)</td></tr>
+<tr class="separator:ace2094b2c9b4339e1b01a5367a3fe799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cdbc1a2b7a5723b10f6815895e8d09" id="r_a48cdbc1a2b7a5723b10f6815895e8d09"><td class="memItemLeft" align="right" valign="top"><a id="a48cdbc1a2b7a5723b10f6815895e8d09" name="a48cdbc1a2b7a5723b10f6815895e8d09"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_BlockAttr</b> (char **buffer, Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a48cdbc1a2b7a5723b10f6815895e8d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f22e68fb42aec0eb89f937d5be204a" id="r_a43f22e68fb42aec0eb89f937d5be204a"><td class="memItemLeft" align="right" valign="top"><a id="a43f22e68fb42aec0eb89f937d5be204a" name="a43f22e68fb42aec0eb89f937d5be204a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_InlineBlock</b> (char **buffer, Cstr name, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a43f22e68fb42aec0eb89f937d5be204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852c88a1767e044cedf93d41b98cdac8" id="r_a852c88a1767e044cedf93d41b98cdac8"><td class="memItemLeft" align="right" valign="top"><a id="a852c88a1767e044cedf93d41b98cdac8" name="a852c88a1767e044cedf93d41b98cdac8"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Abbr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a852c88a1767e044cedf93d41b98cdac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b753d3c054c840b66a21bf6dc504d17" id="r_a1b753d3c054c840b66a21bf6dc504d17"><td class="memItemLeft" align="right" valign="top"><a id="a1b753d3c054c840b66a21bf6dc504d17" name="a1b753d3c054c840b66a21bf6dc504d17"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Address</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a1b753d3c054c840b66a21bf6dc504d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869ef2d7bd8fc874328f82a2c5b1ad03" id="r_a869ef2d7bd8fc874328f82a2c5b1ad03"><td class="memItemLeft" align="right" valign="top"><a id="a869ef2d7bd8fc874328f82a2c5b1ad03" name="a869ef2d7bd8fc874328f82a2c5b1ad03"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Anchor</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a869ef2d7bd8fc874328f82a2c5b1ad03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51584049fd2163d44289d400460c88d5" id="r_a51584049fd2163d44289d400460c88d5"><td class="memItemLeft" align="right" valign="top"><a id="a51584049fd2163d44289d400460c88d5" name="a51584049fd2163d44289d400460c88d5"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_AnchorBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a51584049fd2163d44289d400460c88d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a151472848d334d66182ad8a08a2f4" id="r_a72a151472848d334d66182ad8a08a2f4"><td class="memItemLeft" align="right" valign="top"><a id="a72a151472848d334d66182ad8a08a2f4" name="a72a151472848d334d66182ad8a08a2f4"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Area</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a72a151472848d334d66182ad8a08a2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492102bf1492a4e061239db5eae90a9a" id="r_a492102bf1492a4e061239db5eae90a9a"><td class="memItemLeft" align="right" valign="top"><a id="a492102bf1492a4e061239db5eae90a9a" name="a492102bf1492a4e061239db5eae90a9a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Article</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a492102bf1492a4e061239db5eae90a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db3dac119b32d3964b615abe843de1b" id="r_a2db3dac119b32d3964b615abe843de1b"><td class="memItemLeft" align="right" valign="top"><a id="a2db3dac119b32d3964b615abe843de1b" name="a2db3dac119b32d3964b615abe843de1b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Aside</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a2db3dac119b32d3964b615abe843de1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4aded8d6757a8c8a1dcd7fa95c29eb" id="r_adc4aded8d6757a8c8a1dcd7fa95c29eb"><td class="memItemLeft" align="right" valign="top"><a id="adc4aded8d6757a8c8a1dcd7fa95c29eb" name="adc4aded8d6757a8c8a1dcd7fa95c29eb"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Audio</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:adc4aded8d6757a8c8a1dcd7fa95c29eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595f8b293e45ab3ab9e41b69ecae90dc" id="r_a595f8b293e45ab3ab9e41b69ecae90dc"><td class="memItemLeft" align="right" valign="top"><a id="a595f8b293e45ab3ab9e41b69ecae90dc" name="a595f8b293e45ab3ab9e41b69ecae90dc"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_B</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a595f8b293e45ab3ab9e41b69ecae90dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6878f5cea9680b6731a231d15f7d0b9a" id="r_a6878f5cea9680b6731a231d15f7d0b9a"><td class="memItemLeft" align="right" valign="top"><a id="a6878f5cea9680b6731a231d15f7d0b9a" name="a6878f5cea9680b6731a231d15f7d0b9a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Bdi</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a6878f5cea9680b6731a231d15f7d0b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51464feeea2a0feac08c56b3dfd70034" id="r_a51464feeea2a0feac08c56b3dfd70034"><td class="memItemLeft" align="right" valign="top"><a id="a51464feeea2a0feac08c56b3dfd70034" name="a51464feeea2a0feac08c56b3dfd70034"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Bdo</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a51464feeea2a0feac08c56b3dfd70034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47715bcb23f4b157207cb0f86dd70fb" id="r_af47715bcb23f4b157207cb0f86dd70fb"><td class="memItemLeft" align="right" valign="top"><a id="af47715bcb23f4b157207cb0f86dd70fb" name="af47715bcb23f4b157207cb0f86dd70fb"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Blockquote</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:af47715bcb23f4b157207cb0f86dd70fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378787135abec92e8025c3a52f7c7906" id="r_a378787135abec92e8025c3a52f7c7906"><td class="memItemLeft" align="right" valign="top"><a id="a378787135abec92e8025c3a52f7c7906" name="a378787135abec92e8025c3a52f7c7906"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Bold</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a378787135abec92e8025c3a52f7c7906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52bf2f85bde5493bb58246d2e5b253e" id="r_ad52bf2f85bde5493bb58246d2e5b253e"><td class="memItemLeft" align="right" valign="top"><a id="ad52bf2f85bde5493bb58246d2e5b253e" name="ad52bf2f85bde5493bb58246d2e5b253e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Button</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ad52bf2f85bde5493bb58246d2e5b253e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcaa1d7d345839b4a500af68f4c738a" id="r_abfcaa1d7d345839b4a500af68f4c738a"><td class="memItemLeft" align="right" valign="top"><a id="abfcaa1d7d345839b4a500af68f4c738a" name="abfcaa1d7d345839b4a500af68f4c738a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_ButtonBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:abfcaa1d7d345839b4a500af68f4c738a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbe656a9e9b9bf845d94125f6b18f28" id="r_a8cbe656a9e9b9bf845d94125f6b18f28"><td class="memItemLeft" align="right" valign="top"><a id="a8cbe656a9e9b9bf845d94125f6b18f28" name="a8cbe656a9e9b9bf845d94125f6b18f28"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Canvas</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a8cbe656a9e9b9bf845d94125f6b18f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefaa26d03850ee26b389b3cd58a683aa" id="r_aefaa26d03850ee26b389b3cd58a683aa"><td class="memItemLeft" align="right" valign="top"><a id="aefaa26d03850ee26b389b3cd58a683aa" name="aefaa26d03850ee26b389b3cd58a683aa"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Caption</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aefaa26d03850ee26b389b3cd58a683aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ace6e6f1824ae60dc767fe421bf9576" id="r_a3ace6e6f1824ae60dc767fe421bf9576"><td class="memItemLeft" align="right" valign="top"><a id="a3ace6e6f1824ae60dc767fe421bf9576" name="a3ace6e6f1824ae60dc767fe421bf9576"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Cite</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a3ace6e6f1824ae60dc767fe421bf9576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4c6289bc70c9836b0d7c1af12fb99b" id="r_a9b4c6289bc70c9836b0d7c1af12fb99b"><td class="memItemLeft" align="right" valign="top"><a id="a9b4c6289bc70c9836b0d7c1af12fb99b" name="a9b4c6289bc70c9836b0d7c1af12fb99b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Code</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a9b4c6289bc70c9836b0d7c1af12fb99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bcb46efd6c935461259bf837626929" id="r_ae3bcb46efd6c935461259bf837626929"><td class="memItemLeft" align="right" valign="top"><a id="ae3bcb46efd6c935461259bf837626929" name="ae3bcb46efd6c935461259bf837626929"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Col</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ae3bcb46efd6c935461259bf837626929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7833912ddb9dc3a88fbe099b0932c6e" id="r_ab7833912ddb9dc3a88fbe099b0932c6e"><td class="memItemLeft" align="right" valign="top"><a id="ab7833912ddb9dc3a88fbe099b0932c6e" name="ab7833912ddb9dc3a88fbe099b0932c6e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Colgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ab7833912ddb9dc3a88fbe099b0932c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a3925177f6c78d625cc9c335942700" id="r_ab4a3925177f6c78d625cc9c335942700"><td class="memItemLeft" align="right" valign="top"><a id="ab4a3925177f6c78d625cc9c335942700" name="ab4a3925177f6c78d625cc9c335942700"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Data</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ab4a3925177f6c78d625cc9c335942700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f27fe400ccc3d46ce716a69e37b948" id="r_a39f27fe400ccc3d46ce716a69e37b948"><td class="memItemLeft" align="right" valign="top"><a id="a39f27fe400ccc3d46ce716a69e37b948" name="a39f27fe400ccc3d46ce716a69e37b948"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Datalist</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a39f27fe400ccc3d46ce716a69e37b948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bed89562976f5cbc14f0b28121085f" id="r_a24bed89562976f5cbc14f0b28121085f"><td class="memItemLeft" align="right" valign="top"><a id="a24bed89562976f5cbc14f0b28121085f" name="a24bed89562976f5cbc14f0b28121085f"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Dd</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a24bed89562976f5cbc14f0b28121085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d65ad38314ac123dd7bac9ae7d9001d" id="r_a4d65ad38314ac123dd7bac9ae7d9001d"><td class="memItemLeft" align="right" valign="top"><a id="a4d65ad38314ac123dd7bac9ae7d9001d" name="a4d65ad38314ac123dd7bac9ae7d9001d"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Del</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a4d65ad38314ac123dd7bac9ae7d9001d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cd2efee93bcee81626dc9c60dc7378" id="r_af9cd2efee93bcee81626dc9c60dc7378"><td class="memItemLeft" align="right" valign="top"><a id="af9cd2efee93bcee81626dc9c60dc7378" name="af9cd2efee93bcee81626dc9c60dc7378"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Details</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:af9cd2efee93bcee81626dc9c60dc7378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848158b12103fcb4e6fd093dd4a1c7c2" id="r_a848158b12103fcb4e6fd093dd4a1c7c2"><td class="memItemLeft" align="right" valign="top"><a id="a848158b12103fcb4e6fd093dd4a1c7c2" name="a848158b12103fcb4e6fd093dd4a1c7c2"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Dfn</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a848158b12103fcb4e6fd093dd4a1c7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64d1aa058ba2f701169b524b30c64b2" id="r_aa64d1aa058ba2f701169b524b30c64b2"><td class="memItemLeft" align="right" valign="top"><a id="aa64d1aa058ba2f701169b524b30c64b2" name="aa64d1aa058ba2f701169b524b30c64b2"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Dialog</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:aa64d1aa058ba2f701169b524b30c64b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32e63f6a343709f3b7d806330b92416" id="r_ae32e63f6a343709f3b7d806330b92416"><td class="memItemLeft" align="right" valign="top"><a id="ae32e63f6a343709f3b7d806330b92416" name="ae32e63f6a343709f3b7d806330b92416"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Div</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ae32e63f6a343709f3b7d806330b92416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad869cd5e850eb01b64da3f2b2e0e104" id="r_aad869cd5e850eb01b64da3f2b2e0e104"><td class="memItemLeft" align="right" valign="top"><a id="aad869cd5e850eb01b64da3f2b2e0e104" name="aad869cd5e850eb01b64da3f2b2e0e104"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Dl</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:aad869cd5e850eb01b64da3f2b2e0e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf039999ef08817d6b5228f0e8fe6c38" id="r_aaf039999ef08817d6b5228f0e8fe6c38"><td class="memItemLeft" align="right" valign="top"><a id="aaf039999ef08817d6b5228f0e8fe6c38" name="aaf039999ef08817d6b5228f0e8fe6c38"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Dt</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aaf039999ef08817d6b5228f0e8fe6c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30301b10758e8805eb6d619e631b6c3" id="r_aa30301b10758e8805eb6d619e631b6c3"><td class="memItemLeft" align="right" valign="top"><a id="aa30301b10758e8805eb6d619e631b6c3" name="aa30301b10758e8805eb6d619e631b6c3"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Em</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aa30301b10758e8805eb6d619e631b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198bf14c29441fb5e3bbc88cc2a3103a" id="r_a198bf14c29441fb5e3bbc88cc2a3103a"><td class="memItemLeft" align="right" valign="top"><a id="a198bf14c29441fb5e3bbc88cc2a3103a" name="a198bf14c29441fb5e3bbc88cc2a3103a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Embed</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a198bf14c29441fb5e3bbc88cc2a3103a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909b4eaf5bdaaef3c5d482316eb02bff" id="r_a909b4eaf5bdaaef3c5d482316eb02bff"><td class="memItemLeft" align="right" valign="top"><a id="a909b4eaf5bdaaef3c5d482316eb02bff" name="a909b4eaf5bdaaef3c5d482316eb02bff"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Fieldset</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a909b4eaf5bdaaef3c5d482316eb02bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b6ca8d4c8ddd9547053443d07c776c" id="r_a94b6ca8d4c8ddd9547053443d07c776c"><td class="memItemLeft" align="right" valign="top"><a id="a94b6ca8d4c8ddd9547053443d07c776c" name="a94b6ca8d4c8ddd9547053443d07c776c"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Figcaption</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a94b6ca8d4c8ddd9547053443d07c776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c799a86ade7fb32a8486294f205d53a" id="r_a5c799a86ade7fb32a8486294f205d53a"><td class="memItemLeft" align="right" valign="top"><a id="a5c799a86ade7fb32a8486294f205d53a" name="a5c799a86ade7fb32a8486294f205d53a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Figure</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a5c799a86ade7fb32a8486294f205d53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11adc8969253c32c75aac97e4eff638" id="r_ab11adc8969253c32c75aac97e4eff638"><td class="memItemLeft" align="right" valign="top"><a id="ab11adc8969253c32c75aac97e4eff638" name="ab11adc8969253c32c75aac97e4eff638"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Footer</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ab11adc8969253c32c75aac97e4eff638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b4f9ac8b13659cf5d745fba1ec2302" id="r_a62b4f9ac8b13659cf5d745fba1ec2302"><td class="memItemLeft" align="right" valign="top"><a id="a62b4f9ac8b13659cf5d745fba1ec2302" name="a62b4f9ac8b13659cf5d745fba1ec2302"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Form</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a62b4f9ac8b13659cf5d745fba1ec2302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a24cec3f78921749ae76db7a9c6307" id="r_a89a24cec3f78921749ae76db7a9c6307"><td class="memItemLeft" align="right" valign="top"><a id="a89a24cec3f78921749ae76db7a9c6307" name="a89a24cec3f78921749ae76db7a9c6307"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Header</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a89a24cec3f78921749ae76db7a9c6307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6aef96976dae54b2628ac613c361ed2" id="r_ac6aef96976dae54b2628ac613c361ed2"><td class="memItemLeft" align="right" valign="top"><a id="ac6aef96976dae54b2628ac613c361ed2" name="ac6aef96976dae54b2628ac613c361ed2"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Heading</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, size_t size, Cstr text)</td></tr>
+<tr class="separator:ac6aef96976dae54b2628ac613c361ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc64fd858cc535ffbab0a65ca87e55a" id="r_a0fc64fd858cc535ffbab0a65ca87e55a"><td class="memItemLeft" align="right" valign="top"><a id="a0fc64fd858cc535ffbab0a65ca87e55a" name="a0fc64fd858cc535ffbab0a65ca87e55a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Hgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a0fc64fd858cc535ffbab0a65ca87e55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441839d3e725aed5dab2397d1fc0e36e" id="r_a441839d3e725aed5dab2397d1fc0e36e"><td class="memItemLeft" align="right" valign="top"><a id="a441839d3e725aed5dab2397d1fc0e36e" name="a441839d3e725aed5dab2397d1fc0e36e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_I</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a441839d3e725aed5dab2397d1fc0e36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f85f61a8bce6b60fb165e713002417" id="r_a91f85f61a8bce6b60fb165e713002417"><td class="memItemLeft" align="right" valign="top"><a id="a91f85f61a8bce6b60fb165e713002417" name="a91f85f61a8bce6b60fb165e713002417"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Iframe</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a91f85f61a8bce6b60fb165e713002417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad358edef34d65f87a40e8626f3bf913a" id="r_ad358edef34d65f87a40e8626f3bf913a"><td class="memItemLeft" align="right" valign="top"><a id="ad358edef34d65f87a40e8626f3bf913a" name="ad358edef34d65f87a40e8626f3bf913a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Ins</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ad358edef34d65f87a40e8626f3bf913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc3d89931d207fcbda65c626a604c95" id="r_adcc3d89931d207fcbda65c626a604c95"><td class="memItemLeft" align="right" valign="top"><a id="adcc3d89931d207fcbda65c626a604c95" name="adcc3d89931d207fcbda65c626a604c95"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Kbd</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:adcc3d89931d207fcbda65c626a604c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab6128e16c9c8751b1825e79b6dd81f" id="r_adab6128e16c9c8751b1825e79b6dd81f"><td class="memItemLeft" align="right" valign="top"><a id="adab6128e16c9c8751b1825e79b6dd81f" name="adab6128e16c9c8751b1825e79b6dd81f"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Label</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:adab6128e16c9c8751b1825e79b6dd81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2196aec588c22732fa9e4d5d2c32c7" id="r_a0a2196aec588c22732fa9e4d5d2c32c7"><td class="memItemLeft" align="right" valign="top"><a id="a0a2196aec588c22732fa9e4d5d2c32c7" name="a0a2196aec588c22732fa9e4d5d2c32c7"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Legend</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a0a2196aec588c22732fa9e4d5d2c32c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3c478b671da494aa262da946d7e7e5" id="r_adc3c478b671da494aa262da946d7e7e5"><td class="memItemLeft" align="right" valign="top"><a id="adc3c478b671da494aa262da946d7e7e5" name="adc3c478b671da494aa262da946d7e7e5"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Li</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:adc3c478b671da494aa262da946d7e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac339fb04269d3a4e03fc039fc92836a1" id="r_ac339fb04269d3a4e03fc039fc92836a1"><td class="memItemLeft" align="right" valign="top"><a id="ac339fb04269d3a4e03fc039fc92836a1" name="ac339fb04269d3a4e03fc039fc92836a1"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_LiBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ac339fb04269d3a4e03fc039fc92836a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191cce06ad05fe6a1abb195e204fb1b1" id="r_a191cce06ad05fe6a1abb195e204fb1b1"><td class="memItemLeft" align="right" valign="top"><a id="a191cce06ad05fe6a1abb195e204fb1b1" name="a191cce06ad05fe6a1abb195e204fb1b1"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Main</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a191cce06ad05fe6a1abb195e204fb1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ca3454c78d16913b417ba935b7312d" id="r_a68ca3454c78d16913b417ba935b7312d"><td class="memItemLeft" align="right" valign="top"><a id="a68ca3454c78d16913b417ba935b7312d" name="a68ca3454c78d16913b417ba935b7312d"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Map</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a68ca3454c78d16913b417ba935b7312d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e92d232a1398ae19ba154b67797a14" id="r_ae7e92d232a1398ae19ba154b67797a14"><td class="memItemLeft" align="right" valign="top"><a id="ae7e92d232a1398ae19ba154b67797a14" name="ae7e92d232a1398ae19ba154b67797a14"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Mark</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ae7e92d232a1398ae19ba154b67797a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff2750339b9ecb94f2479033bbeae6a" id="r_aeff2750339b9ecb94f2479033bbeae6a"><td class="memItemLeft" align="right" valign="top"><a id="aeff2750339b9ecb94f2479033bbeae6a" name="aeff2750339b9ecb94f2479033bbeae6a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Menu</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:aeff2750339b9ecb94f2479033bbeae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0060eb8fe423d32128b7a85b2ad9fe6" id="r_ab0060eb8fe423d32128b7a85b2ad9fe6"><td class="memItemLeft" align="right" valign="top"><a id="ab0060eb8fe423d32128b7a85b2ad9fe6" name="ab0060eb8fe423d32128b7a85b2ad9fe6"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Meter</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ab0060eb8fe423d32128b7a85b2ad9fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56507947a15cf9cc3459a884cb1aa2b" id="r_ac56507947a15cf9cc3459a884cb1aa2b"><td class="memItemLeft" align="right" valign="top"><a id="ac56507947a15cf9cc3459a884cb1aa2b" name="ac56507947a15cf9cc3459a884cb1aa2b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Nav</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ac56507947a15cf9cc3459a884cb1aa2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f47534cf897708f9407d9e749eb5817" id="r_a5f47534cf897708f9407d9e749eb5817"><td class="memItemLeft" align="right" valign="top"><a id="a5f47534cf897708f9407d9e749eb5817" name="a5f47534cf897708f9407d9e749eb5817"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Noscript</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a5f47534cf897708f9407d9e749eb5817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f32f0ff0e6cfa07ea4399ef0730240" id="r_a31f32f0ff0e6cfa07ea4399ef0730240"><td class="memItemLeft" align="right" valign="top"><a id="a31f32f0ff0e6cfa07ea4399ef0730240" name="a31f32f0ff0e6cfa07ea4399ef0730240"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Object</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a31f32f0ff0e6cfa07ea4399ef0730240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f5d3f137df3e9f36d8834b1331e67a" id="r_af2f5d3f137df3e9f36d8834b1331e67a"><td class="memItemLeft" align="right" valign="top"><a id="af2f5d3f137df3e9f36d8834b1331e67a" name="af2f5d3f137df3e9f36d8834b1331e67a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Ol</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:af2f5d3f137df3e9f36d8834b1331e67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc13f12a2caa25aa3e5a770bfcbdf89" id="r_a6bc13f12a2caa25aa3e5a770bfcbdf89"><td class="memItemLeft" align="right" valign="top"><a id="a6bc13f12a2caa25aa3e5a770bfcbdf89" name="a6bc13f12a2caa25aa3e5a770bfcbdf89"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Optgroup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a6bc13f12a2caa25aa3e5a770bfcbdf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbc16de8491c9667108af16679c239b" id="r_aefbc16de8491c9667108af16679c239b"><td class="memItemLeft" align="right" valign="top"><a id="aefbc16de8491c9667108af16679c239b" name="aefbc16de8491c9667108af16679c239b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Option</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aefbc16de8491c9667108af16679c239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d39a842220e7b02847d54cb5bfbd68" id="r_ad2d39a842220e7b02847d54cb5bfbd68"><td class="memItemLeft" align="right" valign="top"><a id="ad2d39a842220e7b02847d54cb5bfbd68" name="ad2d39a842220e7b02847d54cb5bfbd68"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Output</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ad2d39a842220e7b02847d54cb5bfbd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c368f55ca4c48f6a28170c955ec3fa" id="r_a01c368f55ca4c48f6a28170c955ec3fa"><td class="memItemLeft" align="right" valign="top"><a id="a01c368f55ca4c48f6a28170c955ec3fa" name="a01c368f55ca4c48f6a28170c955ec3fa"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Paragraph</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a01c368f55ca4c48f6a28170c955ec3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e9920cf422b5b874b5b156a9479acf" id="r_ac2e9920cf422b5b874b5b156a9479acf"><td class="memItemLeft" align="right" valign="top"><a id="ac2e9920cf422b5b874b5b156a9479acf" name="ac2e9920cf422b5b874b5b156a9479acf"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_ParagraphBlock</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ac2e9920cf422b5b874b5b156a9479acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039c2a1b0a6626e82be82e7df24b937c" id="r_a039c2a1b0a6626e82be82e7df24b937c"><td class="memItemLeft" align="right" valign="top"><a id="a039c2a1b0a6626e82be82e7df24b937c" name="a039c2a1b0a6626e82be82e7df24b937c"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Param</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a039c2a1b0a6626e82be82e7df24b937c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c3c1cbea1e5a28e588e4f89e9dd169" id="r_a30c3c1cbea1e5a28e588e4f89e9dd169"><td class="memItemLeft" align="right" valign="top"><a id="a30c3c1cbea1e5a28e588e4f89e9dd169" name="a30c3c1cbea1e5a28e588e4f89e9dd169"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Picture</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a30c3c1cbea1e5a28e588e4f89e9dd169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace126ef11be1573508f9cefe750bdec8" id="r_ace126ef11be1573508f9cefe750bdec8"><td class="memItemLeft" align="right" valign="top"><a id="ace126ef11be1573508f9cefe750bdec8" name="ace126ef11be1573508f9cefe750bdec8"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Pre</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ace126ef11be1573508f9cefe750bdec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dff543e3e96777b5528051518c30ef" id="r_af6dff543e3e96777b5528051518c30ef"><td class="memItemLeft" align="right" valign="top"><a id="af6dff543e3e96777b5528051518c30ef" name="af6dff543e3e96777b5528051518c30ef"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Progress</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:af6dff543e3e96777b5528051518c30ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1205060ebf720c4989bf4bd584c0efa" id="r_ad1205060ebf720c4989bf4bd584c0efa"><td class="memItemLeft" align="right" valign="top"><a id="ad1205060ebf720c4989bf4bd584c0efa" name="ad1205060ebf720c4989bf4bd584c0efa"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Q</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:ad1205060ebf720c4989bf4bd584c0efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26ea12b65ecfd24715fe929c25b6096" id="r_aa26ea12b65ecfd24715fe929c25b6096"><td class="memItemLeft" align="right" valign="top"><a id="aa26ea12b65ecfd24715fe929c25b6096" name="aa26ea12b65ecfd24715fe929c25b6096"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Rp</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aa26ea12b65ecfd24715fe929c25b6096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bab1dbabfd5e507d591596a0d02e4b" id="r_aa3bab1dbabfd5e507d591596a0d02e4b"><td class="memItemLeft" align="right" valign="top"><a id="aa3bab1dbabfd5e507d591596a0d02e4b" name="aa3bab1dbabfd5e507d591596a0d02e4b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Rt</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:aa3bab1dbabfd5e507d591596a0d02e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c157f15c8b9aa844695c6ca74d9dd7" id="r_ab1c157f15c8b9aa844695c6ca74d9dd7"><td class="memItemLeft" align="right" valign="top"><a id="ab1c157f15c8b9aa844695c6ca74d9dd7" name="ab1c157f15c8b9aa844695c6ca74d9dd7"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Ruby</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ab1c157f15c8b9aa844695c6ca74d9dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351e5d98bcfe110f0ba21969ed301752" id="r_a351e5d98bcfe110f0ba21969ed301752"><td class="memItemLeft" align="right" valign="top"><a id="a351e5d98bcfe110f0ba21969ed301752" name="a351e5d98bcfe110f0ba21969ed301752"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_S</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a351e5d98bcfe110f0ba21969ed301752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ae23f9a8a444de68af93b5f32d106e" id="r_a99ae23f9a8a444de68af93b5f32d106e"><td class="memItemLeft" align="right" valign="top"><a id="a99ae23f9a8a444de68af93b5f32d106e" name="a99ae23f9a8a444de68af93b5f32d106e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Samp</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a99ae23f9a8a444de68af93b5f32d106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea9dc3262369aac4f9453421ea55e0b" id="r_a2ea9dc3262369aac4f9453421ea55e0b"><td class="memItemLeft" align="right" valign="top"><a id="a2ea9dc3262369aac4f9453421ea55e0b" name="a2ea9dc3262369aac4f9453421ea55e0b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Script</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a2ea9dc3262369aac4f9453421ea55e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d986ee18f7c9c4448b58db88e71bd4" id="r_ae6d986ee18f7c9c4448b58db88e71bd4"><td class="memItemLeft" align="right" valign="top"><a id="ae6d986ee18f7c9c4448b58db88e71bd4" name="ae6d986ee18f7c9c4448b58db88e71bd4"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Search</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ae6d986ee18f7c9c4448b58db88e71bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b45d3403bb7339e8af08a1f2dedaf0" id="r_a16b45d3403bb7339e8af08a1f2dedaf0"><td class="memItemLeft" align="right" valign="top"><a id="a16b45d3403bb7339e8af08a1f2dedaf0" name="a16b45d3403bb7339e8af08a1f2dedaf0"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Section</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a16b45d3403bb7339e8af08a1f2dedaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad181c78fc42208f949b63e54ab536990" id="r_ad181c78fc42208f949b63e54ab536990"><td class="memItemLeft" align="right" valign="top"><a id="ad181c78fc42208f949b63e54ab536990" name="ad181c78fc42208f949b63e54ab536990"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Select</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ad181c78fc42208f949b63e54ab536990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bceeec2532806f51386ccec29062f2" id="r_af6bceeec2532806f51386ccec29062f2"><td class="memItemLeft" align="right" valign="top"><a id="af6bceeec2532806f51386ccec29062f2" name="af6bceeec2532806f51386ccec29062f2"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Small</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:af6bceeec2532806f51386ccec29062f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225aa51c8aa9dee04b9e4a4552253b12" id="r_a225aa51c8aa9dee04b9e4a4552253b12"><td class="memItemLeft" align="right" valign="top"><a id="a225aa51c8aa9dee04b9e4a4552253b12" name="a225aa51c8aa9dee04b9e4a4552253b12"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Span</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a225aa51c8aa9dee04b9e4a4552253b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd2a96ebab41f16a3e1827728b20644" id="r_adfd2a96ebab41f16a3e1827728b20644"><td class="memItemLeft" align="right" valign="top"><a id="adfd2a96ebab41f16a3e1827728b20644" name="adfd2a96ebab41f16a3e1827728b20644"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Strong</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:adfd2a96ebab41f16a3e1827728b20644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd119c711fc53cdc8fcc6bfcc310384" id="r_a0bd119c711fc53cdc8fcc6bfcc310384"><td class="memItemLeft" align="right" valign="top"><a id="a0bd119c711fc53cdc8fcc6bfcc310384" name="a0bd119c711fc53cdc8fcc6bfcc310384"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Style</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a0bd119c711fc53cdc8fcc6bfcc310384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1184efbb2311b4446742249a3e901b" id="r_a2c1184efbb2311b4446742249a3e901b"><td class="memItemLeft" align="right" valign="top"><a id="a2c1184efbb2311b4446742249a3e901b" name="a2c1184efbb2311b4446742249a3e901b"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Sub</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a2c1184efbb2311b4446742249a3e901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0acdaf49519ee0ffde5e1e0828d4e541" id="r_a0acdaf49519ee0ffde5e1e0828d4e541"><td class="memItemLeft" align="right" valign="top"><a id="a0acdaf49519ee0ffde5e1e0828d4e541" name="a0acdaf49519ee0ffde5e1e0828d4e541"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Summary</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a0acdaf49519ee0ffde5e1e0828d4e541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c00f3052afc912aa2316662137bb9e" id="r_a67c00f3052afc912aa2316662137bb9e"><td class="memItemLeft" align="right" valign="top"><a id="a67c00f3052afc912aa2316662137bb9e" name="a67c00f3052afc912aa2316662137bb9e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Sup</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a67c00f3052afc912aa2316662137bb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6005464e812a56c34f52f5f8ba0bf427" id="r_a6005464e812a56c34f52f5f8ba0bf427"><td class="memItemLeft" align="right" valign="top"><a id="a6005464e812a56c34f52f5f8ba0bf427" name="a6005464e812a56c34f52f5f8ba0bf427"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Svg</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a6005464e812a56c34f52f5f8ba0bf427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9884e8ba42954c72895cc1b4240b3e" id="r_adf9884e8ba42954c72895cc1b4240b3e"><td class="memItemLeft" align="right" valign="top"><a id="adf9884e8ba42954c72895cc1b4240b3e" name="adf9884e8ba42954c72895cc1b4240b3e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Table</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:adf9884e8ba42954c72895cc1b4240b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789517dd09bb6f4dea815676d1070804" id="r_a789517dd09bb6f4dea815676d1070804"><td class="memItemLeft" align="right" valign="top"><a id="a789517dd09bb6f4dea815676d1070804" name="a789517dd09bb6f4dea815676d1070804"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Tbody</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a789517dd09bb6f4dea815676d1070804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7c1bb9dc307e57fcb93e872a65ac17" id="r_a9f7c1bb9dc307e57fcb93e872a65ac17"><td class="memItemLeft" align="right" valign="top"><a id="a9f7c1bb9dc307e57fcb93e872a65ac17" name="a9f7c1bb9dc307e57fcb93e872a65ac17"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Td</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a9f7c1bb9dc307e57fcb93e872a65ac17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0587a02727b8f1d0700aed695e2e2155" id="r_a0587a02727b8f1d0700aed695e2e2155"><td class="memItemLeft" align="right" valign="top"><a id="a0587a02727b8f1d0700aed695e2e2155" name="a0587a02727b8f1d0700aed695e2e2155"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Template</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a0587a02727b8f1d0700aed695e2e2155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a1a02bd89fcc98401f2c672b440e49" id="r_a10a1a02bd89fcc98401f2c672b440e49"><td class="memItemLeft" align="right" valign="top"><a id="a10a1a02bd89fcc98401f2c672b440e49" name="a10a1a02bd89fcc98401f2c672b440e49"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Textarea</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a10a1a02bd89fcc98401f2c672b440e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8198ea457ce9797d60b45e2246f7f581" id="r_a8198ea457ce9797d60b45e2246f7f581"><td class="memItemLeft" align="right" valign="top"><a id="a8198ea457ce9797d60b45e2246f7f581" name="a8198ea457ce9797d60b45e2246f7f581"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Tfoot</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a8198ea457ce9797d60b45e2246f7f581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ce4914b241b94d4a31f3c05ccffd9d" id="r_a84ce4914b241b94d4a31f3c05ccffd9d"><td class="memItemLeft" align="right" valign="top"><a id="a84ce4914b241b94d4a31f3c05ccffd9d" name="a84ce4914b241b94d4a31f3c05ccffd9d"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Th</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a84ce4914b241b94d4a31f3c05ccffd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acead4eb52dce6467ff4b7983d2e352" id="r_a8acead4eb52dce6467ff4b7983d2e352"><td class="memItemLeft" align="right" valign="top"><a id="a8acead4eb52dce6467ff4b7983d2e352" name="a8acead4eb52dce6467ff4b7983d2e352"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Thead</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a8acead4eb52dce6467ff4b7983d2e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3ed66b2714a017ef29265e6feafa8e" id="r_a5d3ed66b2714a017ef29265e6feafa8e"><td class="memItemLeft" align="right" valign="top"><a id="a5d3ed66b2714a017ef29265e6feafa8e" name="a5d3ed66b2714a017ef29265e6feafa8e"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Time</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a5d3ed66b2714a017ef29265e6feafa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a54e60e5d1948f0b61cc122cb4f452" id="r_a19a54e60e5d1948f0b61cc122cb4f452"><td class="memItemLeft" align="right" valign="top"><a id="a19a54e60e5d1948f0b61cc122cb4f452" name="a19a54e60e5d1948f0b61cc122cb4f452"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Tr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:a19a54e60e5d1948f0b61cc122cb4f452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac573ac01383ec278b8a1d0b5ed8ff1" id="r_a9ac573ac01383ec278b8a1d0b5ed8ff1"><td class="memItemLeft" align="right" valign="top"><a id="a9ac573ac01383ec278b8a1d0b5ed8ff1" name="a9ac573ac01383ec278b8a1d0b5ed8ff1"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_U</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a9ac573ac01383ec278b8a1d0b5ed8ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae799c614e576ec630ba39e42b81182af" id="r_ae799c614e576ec630ba39e42b81182af"><td class="memItemLeft" align="right" valign="top"><a id="ae799c614e576ec630ba39e42b81182af" name="ae799c614e576ec630ba39e42b81182af"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Ul</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ae799c614e576ec630ba39e42b81182af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f0987c8ec8ca5f22aafedac325613a" id="r_a98f0987c8ec8ca5f22aafedac325613a"><td class="memItemLeft" align="right" valign="top"><a id="a98f0987c8ec8ca5f22aafedac325613a" name="a98f0987c8ec8ca5f22aafedac325613a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Var</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a98f0987c8ec8ca5f22aafedac325613a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae403363d46941f444a4c9222ab95f5c6" id="r_ae403363d46941f444a4c9222ab95f5c6"><td class="memItemLeft" align="right" valign="top"><a id="ae403363d46941f444a4c9222ab95f5c6" name="ae403363d46941f444a4c9222ab95f5c6"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Video</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, BlockContents contents)</td></tr>
+<tr class="separator:ae403363d46941f444a4c9222ab95f5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3f6e38fc18f78034ccb60aefc760a5" id="r_a9e3f6e38fc18f78034ccb60aefc760a5"><td class="memItemLeft" align="right" valign="top"><a id="a9e3f6e38fc18f78034ccb60aefc760a5" name="a9e3f6e38fc18f78034ccb60aefc760a5"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Wbr</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes, Cstr text)</td></tr>
+<tr class="separator:a9e3f6e38fc18f78034ccb60aefc760a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c50584cc3efcd8647b7745910fb3503" id="r_a0c50584cc3efcd8647b7745910fb3503"><td class="memItemLeft" align="right" valign="top"><a id="a0c50584cc3efcd8647b7745910fb3503" name="a0c50584cc3efcd8647b7745910fb3503"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Input</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:a0c50584cc3efcd8647b7745910fb3503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69ce3c15296ff036e688e1e0374b90a" id="r_ab69ce3c15296ff036e688e1e0374b90a"><td class="memItemLeft" align="right" valign="top"><a id="ab69ce3c15296ff036e688e1e0374b90a" name="ab69ce3c15296ff036e688e1e0374b90a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Img</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:ab69ce3c15296ff036e688e1e0374b90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d63623a143cf2e474a13f404a95b1a" id="r_a18d63623a143cf2e474a13f404a95b1a"><td class="memItemLeft" align="right" valign="top"><a id="a18d63623a143cf2e474a13f404a95b1a" name="a18d63623a143cf2e474a13f404a95b1a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Link</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:a18d63623a143cf2e474a13f404a95b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0dffe0cc0fa43e4393b25b98db9d3eb" id="r_ae0dffe0cc0fa43e4393b25b98db9d3eb"><td class="memItemLeft" align="right" valign="top"><a id="ae0dffe0cc0fa43e4393b25b98db9d3eb" name="ae0dffe0cc0fa43e4393b25b98db9d3eb"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Br</b> (char **buffer)</td></tr>
+<tr class="separator:ae0dffe0cc0fa43e4393b25b98db9d3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac69d02612b4fc0b1c4ccac5331432a" id="r_aeac69d02612b4fc0b1c4ccac5331432a"><td class="memItemLeft" align="right" valign="top"><a id="aeac69d02612b4fc0b1c4ccac5331432a" name="aeac69d02612b4fc0b1c4ccac5331432a"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Hr</b> (char **buffer)</td></tr>
+<tr class="separator:aeac69d02612b4fc0b1c4ccac5331432a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01942c9730209b74ca312c4594e4edfb" id="r_a01942c9730209b74ca312c4594e4edfb"><td class="memItemLeft" align="right" valign="top"><a id="a01942c9730209b74ca312c4594e4edfb" name="a01942c9730209b74ca312c4594e4edfb"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Source</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:a01942c9730209b74ca312c4594e4edfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48b781ef888f38101a223f38e13692d" id="r_af48b781ef888f38101a223f38e13692d"><td class="memItemLeft" align="right" valign="top"><a id="af48b781ef888f38101a223f38e13692d" name="af48b781ef888f38101a223f38e13692d"></a>
+WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Track</b> (char **buffer, <a class="el" href="structAttributeList.html">AttributeList</a> attributes)</td></tr>
+<tr class="separator:af48b781ef888f38101a223f38e13692d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MIT License</p>
@@ -631,14 +635,43 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <dl class="section author"><dt>Author</dt><dd>KDesp73 (Konstantinos Despoinidis) </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af7f7efd89237bc1b33a033e76ebff3d1" name="af7f7efd89237bc1b33a033e76ebff3d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f7efd89237bc1b33a033e76ebff3d1">&#9670;&#160;</a></span>Append()</h2>
+<a id="ae021b664b5d1206e187c1aa8deaf45f9" name="ae021b664b5d1206e187c1aa8deaf45f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae021b664b5d1206e187c1aa8deaf45f9">&#9670;&#160;</a></span>WEBC_Append()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void Append </td>
+          <td class="memname">WEBCAPI void WEBC_Append </td>
+          <td>(</td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Appends text (no newline) to the buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer's pointer </td></tr>
+    <tr><td class="paramname">text</td><td>The text to append </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fc71db98daf3d80e67e6391c3ab4d45" name="a2fc71db98daf3d80e67e6391c3ab4d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc71db98daf3d80e67e6391c3ab4d45">&#9670;&#160;</a></span>WEBC_AppendLn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WEBCAPI void WEBC_AppendLn </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
@@ -660,14 +693,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="aae5584cf64361aaf83a9e52faa0777da" name="aae5584cf64361aaf83a9e52faa0777da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5584cf64361aaf83a9e52faa0777da">&#9670;&#160;</a></span>AttributeNameToString()</h2>
+<a id="ae622888e92c1660b6d9fffdf1d779467" name="ae622888e92c1660b6d9fffdf1d779467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae622888e92c1660b6d9fffdf1d779467">&#9670;&#160;</a></span>WEBC_AttributeNameToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI Cstr AttributeNameToString </td>
+          <td class="memname">WEBCAPI Cstr WEBC_AttributeNameToString </td>
           <td>(</td>
           <td class="paramtype">AttributeName</td>          <td class="paramname"><span class="paramname"><em>attr</em></span></td><td>)</td>
           <td></td>
@@ -685,14 +718,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="ad73030256e621b53d57272686a36826e" name="ad73030256e621b53d57272686a36826e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad73030256e621b53d57272686a36826e">&#9670;&#160;</a></span>Clean()</h2>
+<a id="a59ec6a1585880819a8e74e480fd144d0" name="a59ec6a1585880819a8e74e480fd144d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ec6a1585880819a8e74e480fd144d0">&#9670;&#160;</a></span>WEBC_Clean()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void Clean </td>
+          <td class="memname">WEBCAPI void WEBC_Clean </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span></td><td>)</td>
           <td></td>
@@ -709,14 +742,38 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a4a6b0a0e3fde4e16b78100cae11f616f" name="a4a6b0a0e3fde4e16b78100cae11f616f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6b0a0e3fde4e16b78100cae11f616f">&#9670;&#160;</a></span>CleanTag()</h2>
+<a id="ac838c907589d0ccad3223375e501ddbd" name="ac838c907589d0ccad3223375e501ddbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac838c907589d0ccad3223375e501ddbd">&#9670;&#160;</a></span>WEBC_CleanAttributeList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void CleanTag </td>
+          <td class="memname">WEBCAPI void WEBC_CleanAttributeList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAttributeList.html">AttributeList</a></td>          <td class="paramname"><span class="paramname"><em>list</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frees the memory allocated bu the <a class="el" href="structAttributeList.html">AttributeList</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The <a class="el" href="structAttributeList.html">AttributeList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44764f66440b7c57a265259b284ed253" name="a44764f66440b7c57a265259b284ed253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44764f66440b7c57a265259b284ed253">&#9670;&#160;</a></span>WEBC_CleanTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WEBCAPI void WEBC_CleanTag </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structTag.html">Tag</a> **</td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
           <td></td>
@@ -733,14 +790,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="aac55196a1e3af4134c691d7858752284" name="aac55196a1e3af4134c691d7858752284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac55196a1e3af4134c691d7858752284">&#9670;&#160;</a></span>ClosingTag()</h2>
+<a id="acadb4db380b195d61ffa25de83dc86a1" name="acadb4db380b195d61ffa25de83dc86a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadb4db380b195d61ffa25de83dc86a1">&#9670;&#160;</a></span>WEBC_ClosingTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI Cstr ClosingTag </td>
+          <td class="memname">WEBCAPI Cstr WEBC_ClosingTag </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structTag.html">Tag</a> *</td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
           <td></td>
@@ -758,14 +815,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a9e9ca7396bf529ad5c4e05ba59265164" name="a9e9ca7396bf529ad5c4e05ba59265164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e9ca7396bf529ad5c4e05ba59265164">&#9670;&#160;</a></span>Head()</h2>
+<a id="a91d28ef5b62de9e142bd6f3f5a06840c" name="a91d28ef5b62de9e142bd6f3f5a06840c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d28ef5b62de9e142bd6f3f5a06840c">&#9670;&#160;</a></span>WEBC_Head()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void Head </td>
+          <td class="memname">WEBCAPI void WEBC_Head </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
@@ -800,14 +857,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="ae38f6fd1bd1bf2068fa33e89d98b0971" name="ae38f6fd1bd1bf2068fa33e89d98b0971"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae38f6fd1bd1bf2068fa33e89d98b0971">&#9670;&#160;</a></span>HtmlStart()</h2>
+<a id="a1be6f40006ab29fc333be2d0780b2a16" name="a1be6f40006ab29fc333be2d0780b2a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be6f40006ab29fc333be2d0780b2a16">&#9670;&#160;</a></span>WEBC_HtmlStart()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void HtmlStart </td>
+          <td class="memname">WEBCAPI void WEBC_HtmlStart </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
@@ -829,14 +886,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a9f3540e7b9e9af788f8faf239f129910" name="a9f3540e7b9e9af788f8faf239f129910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f3540e7b9e9af788f8faf239f129910">&#9670;&#160;</a></span>IntegrateFile()</h2>
+<a id="ae7133115a31dada82c76678a0410f047" name="ae7133115a31dada82c76678a0410f047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7133115a31dada82c76678a0410f047">&#9670;&#160;</a></span>WEBC_IntegrateFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI void IntegrateFile </td>
+          <td class="memname">WEBCAPI void WEBC_IntegrateFile </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
@@ -857,14 +914,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a92538f30934cad1d94a6c29849049a69" name="a92538f30934cad1d94a6c29849049a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92538f30934cad1d94a6c29849049a69">&#9670;&#160;</a></span>MakeAttribute()</h2>
+<a id="a67effe9176b63ac091451074ec0f7575" name="a67effe9176b63ac091451074ec0f7575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67effe9176b63ac091451074ec0f7575">&#9670;&#160;</a></span>WEBC_MakeAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI <a class="el" href="structAttribute.html">Attribute</a> * MakeAttribute </td>
+          <td class="memname">WEBCAPI <a class="el" href="structAttribute.html">Attribute</a> * WEBC_MakeAttribute </td>
           <td>(</td>
           <td class="paramtype">AttributeName</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
@@ -887,14 +944,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="ab32537bd71edeef2561a3cef3447b7e7" name="ab32537bd71edeef2561a3cef3447b7e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab32537bd71edeef2561a3cef3447b7e7">&#9670;&#160;</a></span>MakeAttributeList()</h2>
+<a id="a9713bcb54364cb7da23dbba687a9eebf" name="a9713bcb54364cb7da23dbba687a9eebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9713bcb54364cb7da23dbba687a9eebf">&#9670;&#160;</a></span>WEBC_MakeAttributeList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a> MakeAttributeList </td>
+          <td class="memname">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a> WEBC_MakeAttributeList </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structAttribute.html">Attribute</a> *</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
         </tr>
@@ -918,14 +975,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a398d0151e1428b32f2dfd752ac69ca50" name="a398d0151e1428b32f2dfd752ac69ca50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a398d0151e1428b32f2dfd752ac69ca50">&#9670;&#160;</a></span>MakeTag()</h2>
+<a id="a670a66f4378c32e12bd7399ce59770cb" name="a670a66f4378c32e12bd7399ce59770cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670a66f4378c32e12bd7399ce59770cb">&#9670;&#160;</a></span>WEBC_MakeTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI <a class="el" href="structTag.html">Tag</a> * MakeTag </td>
+          <td class="memname">WEBCAPI <a class="el" href="structTag.html">Tag</a> * WEBC_MakeTag </td>
           <td>(</td>
           <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
@@ -948,14 +1005,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a0dc8625b154a1c0b40b3a1fd2b25b7d0" name="a0dc8625b154a1c0b40b3a1fd2b25b7d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc8625b154a1c0b40b3a1fd2b25b7d0">&#9670;&#160;</a></span>MakeTagAttr()</h2>
+<a id="ae37855eabb600c11466d6864127d3db3" name="ae37855eabb600c11466d6864127d3db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37855eabb600c11466d6864127d3db3">&#9670;&#160;</a></span>WEBC_MakeTagAttr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI <a class="el" href="structTag.html">Tag</a> * MakeTagAttr </td>
+          <td class="memname">WEBCAPI <a class="el" href="structTag.html">Tag</a> * WEBC_MakeTagAttr </td>
           <td>(</td>
           <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
@@ -985,14 +1042,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a893d4aba21aab7810a95ba715b556ad9" name="a893d4aba21aab7810a95ba715b556ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a893d4aba21aab7810a95ba715b556ad9">&#9670;&#160;</a></span>TagToString()</h2>
+<a id="a6fcf52c7753b398a271d0de6d7cc24e6" name="a6fcf52c7753b398a271d0de6d7cc24e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcf52c7753b398a271d0de6d7cc24e6">&#9670;&#160;</a></span>WEBC_TagToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI Cstr TagToString </td>
+          <td class="memname">WEBCAPI Cstr WEBC_TagToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structTag.html">Tag</a> *</td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
           <td></td>
@@ -1010,14 +1067,14 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 
 </div>
 </div>
-<a id="a81e2ad82b3ad1fc69c2d52122b7ce2e3" name="a81e2ad82b3ad1fc69c2d52122b7ce2e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81e2ad82b3ad1fc69c2d52122b7ce2e3">&#9670;&#160;</a></span>UseModifier()</h2>
+<a id="a9093539c7611230b3fb6ee61d8b4659a" name="a9093539c7611230b3fb6ee61d8b4659a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9093539c7611230b3fb6ee61d8b4659a">&#9670;&#160;</a></span>WEBC_UseModifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a> UseModifier </td>
+          <td class="memname">WEBCAPI <a class="el" href="structAttributeList.html">AttributeList</a> WEBC_UseModifier </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModifier.html">Modifier</a></td>          <td class="paramname"><span class="paramname"><em>modifier</em></span></td><td>)</td>
           <td></td>
@@ -1041,7 +1098,7 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>Wbr</b> (char
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="webc-core_8h.html">webc-core.h</a></li>
-    <li class="footer">Generated on Wed Jun 19 2024 19:53:09 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Jun 26 2024 23:42:53 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
