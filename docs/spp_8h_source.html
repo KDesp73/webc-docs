@@ -103,50 +103,40 @@ $(function(){initNavTree('spp_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="spp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef WEBCTEMPLATESPP_H</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define WEBCTEMPLATESPP_H</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef WEBC_TEMPLATE_SPP_H</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define WEBC_TEMPLATE_SPP_H</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="webc-core_8h.html">webc-core.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structProject.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Cstr title;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Cstr link;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Cstr lang;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Cstr license;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Cstr desc;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_struct" href="structProject.html">Project</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="template_8h.html">webc-templates/template.h</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structSinglePagePortfolio.html">   38</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Cstr title;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Cstr author;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Cstr about;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Cstr email;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Cstr github_username;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> year;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Cstr style_path;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="structProject.html">Project</a>* projects;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">size_t</span> projects_count;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Cstr* skills;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">size_t</span> skills_count;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a>;</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structSinglePagePortfolio.html">   45</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Cstr title;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Cstr author;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Cstr about;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    Cstr github_username;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    Cstr email;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> year;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    Cstr style_path;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_struct" href="structProject.html">Project</a>* projects;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">size_t</span> projects_count;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    Cstr* skills;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">size_t</span> skills_count;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a>;</div>
-</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>WEBCAPI <span class="keywordtype">void</span> WEBC_SidebarLinks(<span class="keywordtype">char</span>** buffer);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>WEBCAPI <span class="keywordtype">void</span> WEBC_SidebarFooter(<span class="keywordtype">char</span>** buffer, Cstr author, <span class="keywordtype">size_t</span> year);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>WEBCAPI <span class="keywordtype">void</span> WEBC_SideBar(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Intro(<span class="keywordtype">char</span>** buffer, Cstr name, Cstr about);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Projects(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structProject.html">Project</a> projects[], <span class="keywordtype">size_t</span> count);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Skills(<span class="keywordtype">char</span>** buffer, Cstr skills[], <span class="keywordtype">size_t</span> skills_count);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Contact(<span class="keywordtype">char</span>** buffer, Cstr email, Cstr github_username);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Content(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>WEBCAPI <span class="keywordtype">char</span>* WEBC_SinglePagePortfolioTemplate(<a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">// WEBCTEMPLATESPP_H</span></div>
-<div class="ttc" id="astructProject_html"><div class="ttname"><a href="structProject.html">Project</a></div><div class="ttdef"><b>Definition</b> spp.h:37</div></div>
-<div class="ttc" id="astructSinglePagePortfolio_html"><div class="ttname"><a href="structSinglePagePortfolio.html">SinglePagePortfolio</a></div><div class="ttdef"><b>Definition</b> spp.h:45</div></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>WEBCAPI <span class="keywordtype">void</span> WEBC_SidebarLinks(<span class="keywordtype">char</span>** buffer);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>WEBCAPI <span class="keywordtype">void</span> WEBC_SideBar(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Intro(<span class="keywordtype">char</span>** buffer, Cstr name, Cstr about);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Projects(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structProject.html">Project</a> projects[], <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Skills(<span class="keywordtype">char</span>** buffer, Cstr skills[], <span class="keywordtype">size_t</span> skills_count);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>WEBCAPI <span class="keywordtype">void</span> WEBC_Content(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>WEBCAPI <span class="keywordtype">char</span>* WEBC_TemplateSinglePagePortfolio(<a class="code hl_struct" href="structSinglePagePortfolio.html">SinglePagePortfolio</a> portfolio);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// WEBC_TEMPLATE_SPP_H</span></div>
+<div class="ttc" id="astructProject_html"><div class="ttname"><a href="structProject.html">Project</a></div><div class="ttdef"><b>Definition</b> template.h:36</div></div>
+<div class="ttc" id="astructSinglePagePortfolio_html"><div class="ttname"><a href="structSinglePagePortfolio.html">SinglePagePortfolio</a></div><div class="ttdef"><b>Definition</b> spp.h:38</div></div>
+<div class="ttc" id="atemplate_8h_html"><div class="ttname"><a href="template_8h.html">template.h</a></div></div>
 <div class="ttc" id="awebc-core_8h_html"><div class="ttname"><a href="webc-core_8h.html">webc-core.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +144,7 @@ $(function(){initNavTree('spp_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e0dbf05269984659ff169df7c787f839.html">webc-templates</a></li><li class="navelem"><a class="el" href="spp_8h.html">spp.h</a></li>
-    <li class="footer">Generated on Fri Jun 28 2024 00:10:57 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 17:49:12 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

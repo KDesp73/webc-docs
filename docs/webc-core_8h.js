@@ -7,6 +7,7 @@ var webc_core_8h =
     [ "WEBC_Append", "webc-core_8h.html#ae021b664b5d1206e187c1aa8deaf45f9", null ],
     [ "WEBC_AppendLn", "webc-core_8h.html#a2fc71db98daf3d80e67e6391c3ab4d45", null ],
     [ "WEBC_AttributeNameToString", "webc-core_8h.html#ae622888e92c1660b6d9fffdf1d779467", null ],
+    [ "WEBC_BufferInit", "webc-core_8h.html#a53896b7ed40da756db127a1c3f8eac07", null ],
     [ "WEBC_Clean", "webc-core_8h.html#a59ec6a1585880819a8e74e480fd144d0", null ],
     [ "WEBC_CleanAttributeList", "webc-core_8h.html#ac838c907589d0ccad3223375e501ddbd", null ],
     [ "WEBC_CleanTag", "webc-core_8h.html#a44764f66440b7c57a265259b284ed253", null ],
