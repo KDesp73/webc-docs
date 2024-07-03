@@ -109,25 +109,31 @@ $(function(){initNavTree('pss_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="webc-core_8h.html">webc-core.h</a>&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="template_8h.html">webc-templates/template.h</a>&quot;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structProjectShowcaseSite.html">   38</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Cstr title;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Cstr author;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Cstr about;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Cstr email;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> year;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Cstr github_username;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="structProject.html">Project</a> project;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Cstr style_path;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structProjectShowcaseSite.html">   42</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Cstr title;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Cstr author;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Cstr email;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">int</span> year;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Cstr github_username;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_struct" href="structProject.html">Project</a> project;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    Cstr style_path;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a>;</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>WEBCAPI <span class="keywordtype">char</span>* WEBC_TemplateProjectShowcaseSite(<a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a> site);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>WEBCAPI <span class="keywordtype">void</span> WEBC_TemplateProjectShowcaseSiteFragment(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a> site);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// WEBC_TEMPLATE_PSS_H</span></div>
-<div class="ttc" id="astructProjectShowcaseSite_html"><div class="ttname"><a href="structProjectShowcaseSite.html">ProjectShowcaseSite</a></div><div class="ttdef"><b>Definition</b> pss.h:38</div></div>
-<div class="ttc" id="astructProject_html"><div class="ttname"><a href="structProject.html">Project</a></div><div class="ttdef"><b>Definition</b> template.h:36</div></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>WEBCAPI <span class="keywordtype">char</span>* WEBC_TemplateProjectShowcaseSite(<a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a> site);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>WEBCAPI <span class="keywordtype">void</span> WEBC_TemplateProjectShowcaseSiteFragment(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structProjectShowcaseSite.html">ProjectShowcaseSite</a> site);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// WEBC_TEMPLATE_PSS_H</span></div>
+<div class="ttc" id="astructProjectShowcaseSite_html"><div class="ttname"><a href="structProjectShowcaseSite.html">ProjectShowcaseSite</a></div><div class="ttdef"><b>Definition</b> pss.h:42</div></div>
+<div class="ttc" id="astructProject_html"><div class="ttname"><a href="structProject.html">Project</a></div><div class="ttdef"><b>Definition</b> template.h:40</div></div>
 <div class="ttc" id="atemplate_8h_html"><div class="ttname"><a href="template_8h.html">template.h</a></div></div>
 <div class="ttc" id="awebc-core_8h_html"><div class="ttname"><a href="webc-core_8h.html">webc-core.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -136,7 +142,7 @@ $(function(){initNavTree('pss_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e0dbf05269984659ff169df7c787f839.html">webc-templates</a></li><li class="navelem"><a class="el" href="pss_8h.html">pss.h</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 17:49:12 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 15:05:03 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
