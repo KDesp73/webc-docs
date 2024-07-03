@@ -23,10 +23,12 @@ var searchData=
   ['webc_5fmaketag_20',['WEBC_MakeTag',['../webc-core_8h.html#a670a66f4378c32e12bd7399ce59770cb',1,'webc-core.h']]],
   ['webc_5fmaketagattr_21',['WEBC_MakeTagAttr',['../webc-core_8h.html#ae37855eabb600c11466d6864127d3db3',1,'webc-core.h']]],
   ['webc_5fmaketree_22',['WEBC_MakeTree',['../webc-actions_8h.html#ac1edfe69ca96b62f546ef3ada423f0b9',1,'webc-actions.h']]],
-  ['webc_5fparsecliargs_23',['WEBC_ParseCliArgs',['../webc-actions_8h.html#a875e9d096d4eccb99fd140c0cc764b27',1,'webc-actions.h']]],
-  ['webc_5fserveexported_24',['WEBC_ServeExported',['../webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e',1,'webc-server.h']]],
-  ['webc_5fserveexportedroot_25',['WEBC_ServeExportedRoot',['../webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff',1,'webc-server.h']]],
-  ['webc_5fservetree_26',['WEBC_ServeTree',['../webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9',1,'webc-server.h']]],
-  ['webc_5ftagtostring_27',['WEBC_TagToString',['../webc-core_8h.html#a6fcf52c7753b398a271d0de6d7cc24e6',1,'webc-core.h']]],
-  ['webc_5fusemodifier_28',['WEBC_UseModifier',['../webc-core_8h.html#a9093539c7611230b3fb6ee61d8b4659a',1,'webc-core.h']]]
+  ['webc_5fmarkdowntohtml_23',['WEBC_MarkdownToHtml',['../webc-md_8h.html#afa29356485034a4bc3bd24ff9ea85765',1,'webc-md.h']]],
+  ['webc_5fmarkdowntohtmltext_24',['WEBC_MarkdownToHtmlText',['../webc-md_8h.html#a5fce92a77cfae96a7ff5acef7f331e54',1,'webc-md.h']]],
+  ['webc_5fparsecliargs_25',['WEBC_ParseCliArgs',['../webc-actions_8h.html#a875e9d096d4eccb99fd140c0cc764b27',1,'webc-actions.h']]],
+  ['webc_5fserveexported_26',['WEBC_ServeExported',['../webc-server_8h.html#aaf0eb06a3c122243c9558a51ec288a3e',1,'webc-server.h']]],
+  ['webc_5fserveexportedroot_27',['WEBC_ServeExportedRoot',['../webc-server_8h.html#a4361c96c53d55df13ab32c89b44769ff',1,'webc-server.h']]],
+  ['webc_5fservetree_28',['WEBC_ServeTree',['../webc-server_8h.html#af07f9c41ce2cf297054af607561ebea9',1,'webc-server.h']]],
+  ['webc_5ftagtostring_29',['WEBC_TagToString',['../webc-core_8h.html#a6fcf52c7753b398a271d0de6d7cc24e6',1,'webc-core.h']]],
+  ['webc_5fusemodifier_30',['WEBC_UseModifier',['../webc-core_8h.html#a9093539c7611230b3fb6ee61d8b4659a',1,'webc-core.h']]]
 ];
