@@ -198,6 +198,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a2286b93ec221975966e958c4f74089b3" id="r_a2286b93ec221975966e958c4f74089b3"><td class="memItemLeft" align="right" valign="top"><a id="a2286b93ec221975966e958c4f74089b3" name="a2286b93ec221975966e958c4f74089b3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Javascript</b>(buffer,  text)&#160;&#160;&#160;    WEBC_PlainText(buffer, text)</td></tr>
 <tr class="separator:a2286b93ec221975966e958c4f74089b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac414b2087eac89c231a3e430e38c41af" id="r_ac414b2087eac89c231a3e430e38c41af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac414b2087eac89c231a3e430e38c41af">WEBC_Comment</a>(buffer,  text)</td></tr>
+<tr class="separator:ac414b2087eac89c231a3e430e38c41af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c703ce6d8ac98d4979dbe2a4c500cd" id="r_a69c703ce6d8ac98d4979dbe2a4c500cd"><td class="memItemLeft" align="right" valign="top"><a id="a69c703ce6d8ac98d4979dbe2a4c500cd" name="a69c703ce6d8ac98d4979dbe2a4c500cd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_H1</b>(buffer,  attr,  text)&#160;&#160;&#160;    WEBC_Heading(buffer, attr, 1, text);</td></tr>
 <tr class="separator:a69c703ce6d8ac98d4979dbe2a4c500cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -881,6 +883,32 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Wbr</b> 
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ac414b2087eac89c231a3e430e38c41af" name="ac414b2087eac89c231a3e430e38c41af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac414b2087eac89c231a3e430e38c41af">&#9670;&#160;</a></span>WEBC_Comment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WEBC_Comment</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
+<div class="line">        <span class="keywordtype">char</span>* comment = clib_format_text(<span class="stringliteral">&quot;&lt;!--%s--&gt;&quot;</span>); \</div>
+<div class="line">        WEBC_AppendLn(buffer, comment); \</div>
+<div class="line">        free(comment); \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0);</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae021b664b5d1206e187c1aa8deaf45f9" name="ae021b664b5d1206e187c1aa8deaf45f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae021b664b5d1206e187c1aa8deaf45f9">&#9670;&#160;</a></span>WEBC_Append()</h2>
@@ -1364,7 +1392,7 @@ WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><b>WEBC_Wbr</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="webc-core_8h.html">webc-core.h</a></li>
-    <li class="footer">Generated on Sun Jul 7 2024 15:26:27 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Jul 7 2024 21:44:09 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
