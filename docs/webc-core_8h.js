@@ -3,6 +3,7 @@ var webc_core_8h =
     [ "Attribute", "structAttribute.html", null ],
     [ "AttributeList", "structAttributeList.html", null ],
     [ "Tag", "structTag.html", null ],
+    [ "MouseEvents", "structMouseEvents.html", null ],
     [ "Modifier", "structModifier.html", null ],
     [ "WEBC_Append", "webc-core_8h.html#ae021b664b5d1206e187c1aa8deaf45f9", null ],
     [ "WEBC_AppendLn", "webc-core_8h.html#a2fc71db98daf3d80e67e6391c3ab4d45", null ],

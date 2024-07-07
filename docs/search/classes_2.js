@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['project_0',['Project',['../structProject.html',1,'']]],
-  ['projectshowcasesite_1',['ProjectShowcaseSite',['../structProjectShowcaseSite.html',1,'']]]
+  ['carouselitem_0',['CarouselItem',['../structCarouselItem.html',1,'']]],
+  ['chatbubble_1',['ChatBubble',['../structChatBubble.html',1,'']]],
+  ['codeline_2',['CodeLine',['../structCodeLine.html',1,'']]]
 ];
