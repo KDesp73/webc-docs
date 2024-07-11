@@ -17,5 +17,6 @@ var annotated_dup =
     [ "Tag", "structTag.html", null ],
     [ "Template", "structTemplate.html", null ],
     [ "Tree", "structTree.html", null ],
-    [ "WebcAction", "structWebcAction.html", null ]
+    [ "WebcAction", "structWebcAction.html", null ],
+    [ "WEBCServe", "unionWEBCServe.html", null ]
 ];

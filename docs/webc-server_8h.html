@@ -98,6 +98,7 @@ $(function(){initNavTree('webc-server_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">webc-server.h File Reference</div></div>
@@ -114,20 +115,27 @@ Include dependency graph for webc-server.h:</div>
 </div>
 <p><a href="webc-server_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionWEBCServe.html">WEBCServe</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaf0eb06a3c122243c9558a51ec288a3e" id="r_aaf0eb06a3c122243c9558a51ec288a3e"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0eb06a3c122243c9558a51ec288a3e">WEBC_ServeExported</a> (int port, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
-<tr class="separator:aaf0eb06a3c122243c9558a51ec288a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4361c96c53d55df13ab32c89b44769ff" id="r_a4361c96c53d55df13ab32c89b44769ff"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4361c96c53d55df13ab32c89b44769ff">WEBC_ServeExportedRoot</a> (int port, Cstr root)</td></tr>
-<tr class="separator:a4361c96c53d55df13ab32c89b44769ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af07f9c41ce2cf297054af607561ebea9" id="r_af07f9c41ce2cf297054af607561ebea9"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af07f9c41ce2cf297054af607561ebea9">WEBC_ServeTree</a> (int port, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
-<tr class="separator:af07f9c41ce2cf297054af607561ebea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90496a54bf8196944fb54d0b702b5f24" id="r_a90496a54bf8196944fb54d0b702b5f24"><td class="memItemLeft" align="right" valign="top"><a id="a90496a54bf8196944fb54d0b702b5f24" name="a90496a54bf8196944fb54d0b702b5f24"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_response_tree</b> (int sock, const struct request_t *req, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
-<tr class="separator:a90496a54bf8196944fb54d0b702b5f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b01c010d545b1d5007243eebed4ba3" id="r_af4b01c010d545b1d5007243eebed4ba3"><td class="memItemLeft" align="right" valign="top"><a id="af4b01c010d545b1d5007243eebed4ba3" name="af4b01c010d545b1d5007243eebed4ba3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (struct server_t *server, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
-<tr class="separator:af4b01c010d545b1d5007243eebed4ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431cb8cd1749baeb2dc690887ef0895b" id="r_a431cb8cd1749baeb2dc690887ef0895b"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a431cb8cd1749baeb2dc690887ef0895b">WEBC_ServeExported</a> (Cstr ip, int port, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
+<tr class="separator:a431cb8cd1749baeb2dc690887ef0895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac326da08235ec5278389914f9a0feeb4" id="r_ac326da08235ec5278389914f9a0feeb4"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac326da08235ec5278389914f9a0feeb4">WEBC_ServeExportedRoot</a> (Cstr ip, int port, Cstr root)</td></tr>
+<tr class="separator:ac326da08235ec5278389914f9a0feeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30db5817e4bbd98fa62ceeafc1da1124" id="r_a30db5817e4bbd98fa62ceeafc1da1124"><td class="memItemLeft" align="right" valign="top">WEBCAPI int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30db5817e4bbd98fa62ceeafc1da1124">WEBC_ServeTree</a> (Cstr ip, int port, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
+<tr class="separator:a30db5817e4bbd98fa62ceeafc1da1124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3b2a7633ef0c807fee8f5aa2a43e7b" id="r_a3e3b2a7633ef0c807fee8f5aa2a43e7b"><td class="memItemLeft" align="right" valign="top">WEBCAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e3b2a7633ef0c807fee8f5aa2a43e7b">WEBC_Daemon</a> (DaemonAction action, <a class="el" href="unionWEBCServe.html">WEBCServe</a> serve, Cstr ip, int port, Cstr root, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
+<tr class="separator:a3e3b2a7633ef0c807fee8f5aa2a43e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362462a2f32de462e11c9fb144b03678" id="r_a362462a2f32de462e11c9fb144b03678"><td class="memItemLeft" align="right" valign="top"><a id="a362462a2f32de462e11c9fb144b03678" name="a362462a2f32de462e11c9fb144b03678"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>response_tree</b> (int sock, const request_t req, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
+<tr class="separator:a362462a2f32de462e11c9fb144b03678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bf719d8d58989e9c5658829feed132" id="r_a93bf719d8d58989e9c5658829feed132"><td class="memItemLeft" align="right" valign="top"><a id="a93bf719d8d58989e9c5658829feed132" name="a93bf719d8d58989e9c5658829feed132"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (server_t server, <a class="el" href="structTree.html">Tree</a> tree)</td></tr>
+<tr class="separator:a93bf719d8d58989e9c5658829feed132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MIT License</p>
@@ -138,8 +146,50 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
 <dl class="section author"><dt>Author</dt><dd>KDesp73 (Konstantinos Despoinidis) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.0.1 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aaf0eb06a3c122243c9558a51ec288a3e" name="aaf0eb06a3c122243c9558a51ec288a3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf0eb06a3c122243c9558a51ec288a3e">&#9670;&#160;</a></span>WEBC_ServeExported()</h2>
+<a id="a3e3b2a7633ef0c807fee8f5aa2a43e7b" name="a3e3b2a7633ef0c807fee8f5aa2a43e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3b2a7633ef0c807fee8f5aa2a43e7b">&#9670;&#160;</a></span>WEBC_Daemon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WEBCAPI void WEBC_Daemon </td>
+          <td>(</td>
+          <td class="paramtype">DaemonAction</td>          <td class="paramname"><span class="paramname"><em>action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="unionWEBCServe.html">WEBCServe</a></td>          <td class="paramname"><span class="paramname"><em>serve</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTree.html">Tree</a></td>          <td class="paramname"><span class="paramname"><em>tree</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make any of the serve methods a daemon </p>
+
+</div>
+</div>
+<a id="a431cb8cd1749baeb2dc690887ef0895b" name="a431cb8cd1749baeb2dc690887ef0895b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431cb8cd1749baeb2dc690887ef0895b">&#9670;&#160;</a></span>WEBC_ServeExported()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +197,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
         <tr>
           <td class="memname">WEBCAPI int WEBC_ServeExported </td>
           <td>(</td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
         </tr>
         <tr>
@@ -168,8 +223,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
 
 </div>
 </div>
-<a id="a4361c96c53d55df13ab32c89b44769ff" name="a4361c96c53d55df13ab32c89b44769ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4361c96c53d55df13ab32c89b44769ff">&#9670;&#160;</a></span>WEBC_ServeExportedRoot()</h2>
+<a id="ac326da08235ec5278389914f9a0feeb4" name="ac326da08235ec5278389914f9a0feeb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac326da08235ec5278389914f9a0feeb4">&#9670;&#160;</a></span>WEBC_ServeExportedRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +232,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
         <tr>
           <td class="memname">WEBCAPI int WEBC_ServeExportedRoot </td>
           <td>(</td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
         </tr>
         <tr>
@@ -198,8 +258,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
 
 </div>
 </div>
-<a id="af07f9c41ce2cf297054af607561ebea9" name="af07f9c41ce2cf297054af607561ebea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af07f9c41ce2cf297054af607561ebea9">&#9670;&#160;</a></span>WEBC_ServeTree()</h2>
+<a id="a30db5817e4bbd98fa62ceeafc1da1124" name="a30db5817e4bbd98fa62ceeafc1da1124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30db5817e4bbd98fa62ceeafc1da1124">&#9670;&#160;</a></span>WEBC_ServeTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,6 +267,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
         <tr>
           <td class="memname">WEBCAPI int WEBC_ServeTree </td>
           <td>(</td>
+          <td class="paramtype">Cstr</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
         </tr>
         <tr>
@@ -234,7 +299,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>run_server_tree</b> (s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="webc-server_8h.html">webc-server.h</a></li>
-    <li class="footer">Generated on Sun Jul 7 2024 21:44:09 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Jul 12 2024 00:08:30 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
