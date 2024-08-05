@@ -14,12 +14,12 @@ var webc_core_8h =
     [ "WEBC_CleanTag", "webc-core_8h.html#a44764f66440b7c57a265259b284ed253", null ],
     [ "WEBC_ClosingTag", "webc-core_8h.html#acadb4db380b195d61ffa25de83dc86a1", null ],
     [ "WEBC_Head", "webc-core_8h.html#a91d28ef5b62de9e142bd6f3f5a06840c", null ],
-    [ "WEBC_HtmlStart", "webc-core_8h.html#a1be6f40006ab29fc333be2d0780b2a16", null ],
     [ "WEBC_IntegrateFile", "webc-core_8h.html#ae7133115a31dada82c76678a0410f047", null ],
     [ "WEBC_MakeAttribute", "webc-core_8h.html#a67effe9176b63ac091451074ec0f7575", null ],
     [ "WEBC_MakeAttributeList", "webc-core_8h.html#a9713bcb54364cb7da23dbba687a9eebf", null ],
     [ "WEBC_MakeTag", "webc-core_8h.html#a670a66f4378c32e12bd7399ce59770cb", null ],
     [ "WEBC_MakeTagAttr", "webc-core_8h.html#ae37855eabb600c11466d6864127d3db3", null ],
+    [ "WEBC_TagStart", "webc-core_8h.html#af0d6ae8205853f4e822c40a2aa6ef5d3", null ],
     [ "WEBC_TagToString", "webc-core_8h.html#a6fcf52c7753b398a271d0de6d7cc24e6", null ],
     [ "WEBC_UseModifier", "webc-core_8h.html#a9093539c7611230b3fb6ee61d8b4659a", null ]
 ];

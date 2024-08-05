@@ -19,6 +19,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -254,115 +256,126 @@ $(function(){initNavTree('webc-ui_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>} <a class="code hl_struct" href="structCodeLine.html">CodeLine</a>;</div>
 </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// ############ Utils ############ //</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">#define SECURE_STR(s) ((s == NULL) ? &quot;NULL&quot; : s)</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keywordtype">int</span> is_valid_daisy_size(Cstr size);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keywordtype">int</span> is_valid_daisy_color(Cstr color);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keywordtype">void</span> append_class_attr(<span class="keywordtype">char</span>** <span class="keyword">class</span>, Cstr attr);</div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="};">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="structFooter.html">  172</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    Cstr text;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    Cstr github_link;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>} <a class="code hl_struct" href="structFooter.html">Footer</a>;</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// ############ Utils ############ //</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// ############ UI Elements ############ //</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">// #ifdef DAISY_UI</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#define DAISYUI_LINK \</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">    WEBC_MakeTag(LINK, \</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">            WEBC_MakeAttributeList( \</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_HREF, &quot;https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css&quot;), \</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_REL, &quot;stylesheet&quot;), \</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_TYPE, &quot;text/css&quot;), \</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">                NULL \</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">            ) \</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">        )</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#define TAILWINDCSS_SCRIPT(buffer) \</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">    WEBC_PlainText(buffer, &quot;&lt;script src=\&quot;https://cdn.tailwindcss.com\&quot;&gt;&lt;/script&gt;&quot;);</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a152486e06808d42b0a41b0b5e80cf8a1">  200</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a152486e06808d42b0a41b0b5e80cf8a1">WEBC_DaisyAccordion</a>(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structAccordion.html">Accordion</a> accordion, <span class="keywordtype">int</span> open);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#define SECURE_STR(s) ((s == NULL) ? &quot;NULL&quot; : s)</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keywordtype">int</span> is_valid_daisy_size(Cstr size);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keywordtype">int</span> is_valid_daisy_color(Cstr color);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">void</span> append_class_attr(<span class="keywordtype">char</span>** <span class="keyword">class</span>, Cstr attr);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">// ############ UI Elements ############ //</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// #ifdef DAISY_UI</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#define DAISYUI_LINK \</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">    WEBC_MakeTag(LINK, \</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">            WEBC_MakeAttributeList( \</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_HREF, &quot;https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css&quot;), \</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_REL, &quot;stylesheet&quot;), \</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">                WEBC_MakeAttribute(ATTR_TYPE, &quot;text/css&quot;), \</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">                NULL \</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">            ) \</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">        )</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#define TAILWINDCSS_SCRIPT(buffer) \</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">    WEBC_PlainText(buffer, &quot;&lt;script src=\&quot;https://cdn.tailwindcss.com\&quot;&gt;&lt;/script&gt;&quot;);</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae6d84cbfadf5bd843ca1866ce4062e4f">  205</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae6d84cbfadf5bd843ca1866ce4062e4f">WEBC_DaisyAvatar</a>(<span class="keywordtype">char</span>** buffer, AvatarType type, Cstr img_src, Cstr placeholder, <span class="keywordtype">size_t</span> width);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a152486e06808d42b0a41b0b5e80cf8a1">  205</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a152486e06808d42b0a41b0b5e80cf8a1">WEBC_DaisyAccordion</a>(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structAccordion.html">Accordion</a> accordion, <span class="keywordtype">int</span> open);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ac30c3e51ae64d942e0d9c934c4e990e5">  213</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ac30c3e51ae64d942e0d9c934c4e990e5">WEBC_DaisyBadge</a>(<span class="keywordtype">char</span>** buffer, BadgeType type, Cstr color, Cstr text);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">// TODO: Card</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ab6f4f75aafa55128d703c17d3d00da4d">  222</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ab6f4f75aafa55128d703c17d3d00da4d">WEBC_DaisyCarousel</a>(<span class="keywordtype">char</span>** buffer, CarouselType type, <span class="keywordtype">size_t</span> width, <a class="code hl_struct" href="structCarouselItem.html">CarouselItem</a> items[], <span class="keywordtype">size_t</span> item_count);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad5623539399b8f2533eadc5efd6c4a36">  227</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad5623539399b8f2533eadc5efd6c4a36">WEBC_DaisyChatBubble</a>(<span class="keywordtype">char</span>** buffer, ChatBubbleType type, <a class="code hl_struct" href="structChatBubble.html">ChatBubble</a> bubble, <span class="keywordtype">int</span> left);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae6d84cbfadf5bd843ca1866ce4062e4f">  210</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae6d84cbfadf5bd843ca1866ce4062e4f">WEBC_DaisyAvatar</a>(<span class="keywordtype">char</span>** buffer, AvatarType type, Cstr img_src, Cstr placeholder, <span class="keywordtype">size_t</span> width);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ac30c3e51ae64d942e0d9c934c4e990e5">  218</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ac30c3e51ae64d942e0d9c934c4e990e5">WEBC_DaisyBadge</a>(<span class="keywordtype">char</span>** buffer, BadgeType type, Cstr color, Cstr text);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">// TODO: Card</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ab6f4f75aafa55128d703c17d3d00da4d">  227</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ab6f4f75aafa55128d703c17d3d00da4d">WEBC_DaisyCarousel</a>(<span class="keywordtype">char</span>** buffer, CarouselType type, <span class="keywordtype">size_t</span> width, <a class="code hl_struct" href="structCarouselItem.html">CarouselItem</a> items[], <span class="keywordtype">size_t</span> item_count);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#acdda7e973c20732a4544293efa7a7b8b">  232</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#acdda7e973c20732a4544293efa7a7b8b">WEBC_DaisyCollapse</a>(<span class="keywordtype">char</span>** buffer, Cstr title, Cstr contents);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad5623539399b8f2533eadc5efd6c4a36">  232</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad5623539399b8f2533eadc5efd6c4a36">WEBC_DaisyChatBubble</a>(<span class="keywordtype">char</span>** buffer, ChatBubbleType type, <a class="code hl_struct" href="structChatBubble.html">ChatBubble</a> bubble, <span class="keywordtype">int</span> left);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a72c61e89a03e9f48100ada768d12e667">  237</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a72c61e89a03e9f48100ada768d12e667">WEBC_DaisyAlert</a>(<span class="keywordtype">char</span>** buffer, AlertType type, Cstr text);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#acdda7e973c20732a4544293efa7a7b8b">  237</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#acdda7e973c20732a4544293efa7a7b8b">WEBC_DaisyCollapse</a>(<span class="keywordtype">char</span>** buffer, Cstr title, Cstr contents);</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a18abd4d803c7907ed37ff9dc6a25c8fd">  242</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a18abd4d803c7907ed37ff9dc6a25c8fd">WEBC_DaisyButton</a>(<span class="keywordtype">char</span>** buffer, ButtonType type, <a class="code hl_struct" href="structButton.html">Button</a> button);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a72c61e89a03e9f48100ada768d12e667">  242</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a72c61e89a03e9f48100ada768d12e667">WEBC_DaisyAlert</a>(<span class="keywordtype">char</span>** buffer, AlertType type, Cstr text);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ac94c0870625a19765074dc9e06ad6f7e">  249</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ac94c0870625a19765074dc9e06ad6f7e">WEBC_DaisyCheckbox</a>(<span class="keywordtype">char</span>** buffer, Cstr label, Cstr color);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a5354009c33d7f2492faecebe41690b84">  256</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a5354009c33d7f2492faecebe41690b84">WEBC_DaisyNavbarSidebar</a>(</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordtype">char</span>** buffer, </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        Cstr title, </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <a class="code hl_struct" href="structNavLink.html">NavLink</a> navbar_items[],</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordtype">size_t</span> navbar_items_count,</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <a class="code hl_struct" href="structNavLink.html">NavLink</a> sidebar_items[],</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordtype">size_t</span> sidebar_items_count,</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        BlockContents page_content);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a11127e6b9c7b06234b048a4e185c81df">  268</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a11127e6b9c7b06234b048a4e185c81df">WEBC_DaisyDropdown</a>(<span class="keywordtype">char</span>** buffer, Cstr title, <a class="code hl_struct" href="structNavLink.html">NavLink</a> items[], <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a18abd4d803c7907ed37ff9dc6a25c8fd">  247</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a18abd4d803c7907ed37ff9dc6a25c8fd">WEBC_DaisyButton</a>(<span class="keywordtype">char</span>** buffer, ButtonType type, <a class="code hl_struct" href="structButton.html">Button</a> button);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ac94c0870625a19765074dc9e06ad6f7e">  254</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ac94c0870625a19765074dc9e06ad6f7e">WEBC_DaisyCheckbox</a>(<span class="keywordtype">char</span>** buffer, Cstr label, Cstr color);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a5354009c33d7f2492faecebe41690b84">  261</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a5354009c33d7f2492faecebe41690b84">WEBC_DaisyNavbarSidebar</a>(</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordtype">char</span>** buffer, </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        Cstr title, </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <a class="code hl_struct" href="structNavLink.html">NavLink</a> navbar_items[],</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordtype">size_t</span> navbar_items_count,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <a class="code hl_struct" href="structNavLink.html">NavLink</a> sidebar_items[],</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordtype">size_t</span> sidebar_items_count,</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        BlockContents page_content);</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae1eb01f1486026e132e656de746ce2ea">  275</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae1eb01f1486026e132e656de746ce2ea">WEBC_DaisyLoading</a>(<span class="keywordtype">char</span>** buffer, LoadingType type, Cstr size);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a2752c7b472db867794d5a6af4a11fbdb">  280</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a2752c7b472db867794d5a6af4a11fbdb">WEBC_DaisyFileInput</a>(<span class="keywordtype">char</span>** buffer, Cstr color);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a11127e6b9c7b06234b048a4e185c81df">  273</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a11127e6b9c7b06234b048a4e185c81df">WEBC_DaisyDropdown</a>(<span class="keywordtype">char</span>** buffer, Cstr title, <a class="code hl_struct" href="structNavLink.html">NavLink</a> items[], <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae1eb01f1486026e132e656de746ce2ea">  280</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae1eb01f1486026e132e656de746ce2ea">WEBC_DaisyLoading</a>(<span class="keywordtype">char</span>** buffer, LoadingType type, Cstr size);</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad93a7ef8fcda783788903d23a8fe4915">  285</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad93a7ef8fcda783788903d23a8fe4915">WEBC_DaisyIndicator</a>(<span class="keywordtype">char</span>** buffer, Cstr text, BlockContents toplaceon);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a2752c7b472db867794d5a6af4a11fbdb">  285</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a2752c7b472db867794d5a6af4a11fbdb">WEBC_DaisyFileInput</a>(<span class="keywordtype">char</span>** buffer, Cstr color);</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a37a1ca27f5598cf749caefe21d063985">  292</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a37a1ca27f5598cf749caefe21d063985">WEBC_DaisyTextInput</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">int</span> password, Cstr placeholder, Cstr icon);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a3c89dcaa80dca3d775ce67ef50434cbb">  297</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a3c89dcaa80dca3d775ce67ef50434cbb">WEBC_DaisyCode</a>(<span class="keywordtype">char</span>** buffer, Cstr color, <a class="code hl_struct" href="structCodeLine.html">CodeLine</a> code[], <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad93a7ef8fcda783788903d23a8fe4915">  290</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad93a7ef8fcda783788903d23a8fe4915">WEBC_DaisyIndicator</a>(<span class="keywordtype">char</span>** buffer, Cstr text, BlockContents toplaceon);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a37a1ca27f5598cf749caefe21d063985">  297</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a37a1ca27f5598cf749caefe21d063985">WEBC_DaisyTextInput</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">int</span> password, Cstr placeholder, Cstr icon);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a83eccf7d4017a80c3d817109415e9bc6">  306</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a83eccf7d4017a80c3d817109415e9bc6">WEBC_DaisyModal</a>(<span class="keywordtype">char</span>** buffer, Cstr <span class="keywordtype">id</span>, Cstr title, Cstr content);</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad99e54b420264f5a40da2c3facd95825">  315</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad99e54b420264f5a40da2c3facd95825">WEBC_DaisyPagination</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">size_t</span> from, <span class="keywordtype">size_t</span> to, <span class="keywordtype">size_t</span> checked);</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a1681aff4e3da8859c66ebbcd1de1b956">  322</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a1681aff4e3da8859c66ebbcd1de1b956">WEBC_DaisyProgress</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">size_t</span> width, Cstr color, <span class="keywordtype">size_t</span> value, <span class="keywordtype">size_t</span> max);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#abb4a2a101b7cc5ec9c64b6e7a1826156">  327</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#abb4a2a101b7cc5ec9c64b6e7a1826156">WEBC_DaisyRadio</a>(<span class="keywordtype">char</span>** buffer, Cstr group_name, Cstr color, <span class="keywordtype">int</span> checked);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a3c89dcaa80dca3d775ce67ef50434cbb">  302</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a3c89dcaa80dca3d775ce67ef50434cbb">WEBC_DaisyCode</a>(<span class="keywordtype">char</span>** buffer, Cstr color, <a class="code hl_struct" href="structCodeLine.html">CodeLine</a> code[], <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a83eccf7d4017a80c3d817109415e9bc6">  311</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a83eccf7d4017a80c3d817109415e9bc6">WEBC_DaisyModal</a>(<span class="keywordtype">char</span>** buffer, Cstr <span class="keywordtype">id</span>, Cstr title, Cstr content);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ad99e54b420264f5a40da2c3facd95825">  320</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ad99e54b420264f5a40da2c3facd95825">WEBC_DaisyPagination</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">size_t</span> from, <span class="keywordtype">size_t</span> to, <span class="keywordtype">size_t</span> checked);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a1681aff4e3da8859c66ebbcd1de1b956">  327</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a1681aff4e3da8859c66ebbcd1de1b956">WEBC_DaisyProgress</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">size_t</span> width, Cstr color, <span class="keywordtype">size_t</span> value, <span class="keywordtype">size_t</span> max);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a6a27de0145a20034544220f504f7eb2c">  336</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a6a27de0145a20034544220f504f7eb2c">WEBC_DaisyRange</a>(</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <span class="keywordtype">char</span>** buffer, </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <span class="keywordtype">size_t</span> min, </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keywordtype">size_t</span> max, </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordtype">size_t</span> value, </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordtype">size_t</span> step, </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        Cstr size, </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        Cstr color);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ab66a48a9736adad8a8fa929e4aee2572">  348</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ab66a48a9736adad8a8fa929e4aee2572">WEBC_DaisySelect</a>(<span class="keywordtype">char</span>** buffer, Cstr title, <span class="keywordtype">char</span>* options[], <span class="keywordtype">size_t</span> count, Cstr color);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#abb4a2a101b7cc5ec9c64b6e7a1826156">  332</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#abb4a2a101b7cc5ec9c64b6e7a1826156">WEBC_DaisyRadio</a>(<span class="keywordtype">char</span>** buffer, Cstr group_name, Cstr color, <span class="keywordtype">int</span> checked);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a6a27de0145a20034544220f504f7eb2c">  341</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a6a27de0145a20034544220f504f7eb2c">WEBC_DaisyRange</a>(</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordtype">char</span>** buffer, </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordtype">size_t</span> min, </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordtype">size_t</span> max, </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keywordtype">size_t</span> value, </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="keywordtype">size_t</span> step, </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        Cstr size, </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        Cstr color);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#afa8e08947bc14b88cc5065740eda6613">  355</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#afa8e08947bc14b88cc5065740eda6613">WEBC_DaisyTextarea</a>(<span class="keywordtype">char</span>** buffer, Cstr placeholder, Cstr color, Cstr size);</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a75292353ddba89f28c7a613f81d912d1">  360</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a75292353ddba89f28c7a613f81d912d1">WEBC_DaisyThemeController</a>(<span class="keywordtype">char</span>** buffer);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ab66a48a9736adad8a8fa929e4aee2572">  353</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ab66a48a9736adad8a8fa929e4aee2572">WEBC_DaisySelect</a>(<span class="keywordtype">char</span>** buffer, Cstr title, <span class="keywordtype">char</span>* options[], <span class="keywordtype">size_t</span> count, Cstr color);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#afa8e08947bc14b88cc5065740eda6613">  360</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#afa8e08947bc14b88cc5065740eda6613">WEBC_DaisyTextarea</a>(<span class="keywordtype">char</span>** buffer, Cstr placeholder, Cstr color, Cstr size);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#af92389c4ee6f13c33f9f62e2ea4590c1">  365</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#af92389c4ee6f13c33f9f62e2ea4590c1">WEBC_DaisyToast</a>(<span class="keywordtype">char</span>** buffer, Cstr text, Cstr color);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#a75292353ddba89f28c7a613f81d912d1">  365</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#a75292353ddba89f28c7a613f81d912d1">WEBC_DaisyThemeController</a>(<span class="keywordtype">char</span>** buffer);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae2665b73b50e0f78a99ae01ea266adac">  370</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae2665b73b50e0f78a99ae01ea266adac">WEBC_DaisyToggle</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">int</span> checked, Cstr color, Cstr size);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#af92389c4ee6f13c33f9f62e2ea4590c1">  370</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#af92389c4ee6f13c33f9f62e2ea4590c1">WEBC_DaisyToast</a>(<span class="keywordtype">char</span>** buffer, Cstr text, Cstr color);</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#aa6875758860fc01a71f1f2f67280af98">  375</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#aa6875758860fc01a71f1f2f67280af98">WEBC_DaisyTooltip</a>(<span class="keywordtype">char</span>** buffer, Cstr tooltip, Cstr location, <span class="keywordtype">int</span> open, Cstr color, BlockContents toplaceon);</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#ae2665b73b50e0f78a99ae01ea266adac">  375</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#ae2665b73b50e0f78a99ae01ea266adac">WEBC_DaisyToggle</a>(<span class="keywordtype">char</span>** buffer, <span class="keywordtype">int</span> checked, Cstr color, Cstr size);</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="comment">// #endif // DAISY_UI</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="preprocessor">#endif </span><span class="comment">// WEBCUI_H</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="webc-ui_8h.html#aa6875758860fc01a71f1f2f67280af98">  380</a></span>WEBCAPI <span class="keywordtype">void</span> <a class="code hl_function" href="webc-ui_8h.html#aa6875758860fc01a71f1f2f67280af98">WEBC_DaisyTooltip</a>(<span class="keywordtype">char</span>** buffer, Cstr tooltip, Cstr location, <span class="keywordtype">int</span> open, Cstr color, BlockContents toplaceon);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>WEBCAPI <span class="keywordtype">void</span> WEBC_DaisyFooter(<span class="keywordtype">char</span>** buffer, <a class="code hl_struct" href="structFooter.html">Footer</a> footer);</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">// #endif // DAISY_UI</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>}</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="preprocessor">#endif </span><span class="comment">// WEBCUI_H</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
 <div class="ttc" id="astructAccordion_html"><div class="ttname"><a href="structAccordion.html">Accordion</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:72</div></div>
 <div class="ttc" id="astructButton_html"><div class="ttname"><a href="structButton.html">Button</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:132</div></div>
 <div class="ttc" id="astructCarouselItem_html"><div class="ttname"><a href="structCarouselItem.html">CarouselItem</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:102</div></div>
 <div class="ttc" id="astructChatBubble_html"><div class="ttname"><a href="structChatBubble.html">ChatBubble</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:114</div></div>
 <div class="ttc" id="astructCodeLine_html"><div class="ttname"><a href="structCodeLine.html">CodeLine</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:167</div></div>
+<div class="ttc" id="astructFooter_html"><div class="ttname"><a href="structFooter.html">Footer</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:172</div></div>
 <div class="ttc" id="astructMouseEvents_html"><div class="ttname"><a href="structMouseEvents.html">MouseEvents</a></div><div class="ttdef"><b>Definition</b> webc-core.h:118</div></div>
 <div class="ttc" id="astructNavLink_html"><div class="ttname"><a href="structNavLink.html">NavLink</a></div><div class="ttdef"><b>Definition</b> webc-ui.h:152</div></div>
 <div class="ttc" id="awebc-core_8h_html"><div class="ttname"><a href="webc-core_8h.html">webc-core.h</a></div></div>
@@ -399,7 +412,7 @@ $(function(){initNavTree('webc-ui_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="webc-ui_8h.html">webc-ui.h</a></li>
-    <li class="footer">Generated on Sun Jul 21 2024 17:53:31 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Aug 5 2024 20:56:02 for webc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

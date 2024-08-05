@@ -3,6 +3,8 @@ var webc_actions_8h =
     [ "WebcAction", "structWebcAction.html", null ],
     [ "Route", "structRoute.html", null ],
     [ "Tree", "structTree.html", null ],
+    [ "WEBC_AddRoute", "webc-actions_8h.html#a4d16df720f82421c355fedc833852f3b", null ],
+    [ "WEBC_AllocTree", "webc-actions_8h.html#a7101053cac159e65ab8493f4abb5029c", null ],
     [ "WEBC_CleanRoute", "webc-actions_8h.html#a78e1e3011bbcdcdf5a9df652e65b4771", null ],
     [ "WEBC_CleanTree", "webc-actions_8h.html#a4201327be9b473f29e8f7a5c4c6869e2", null ],
     [ "WEBC_Export", "webc-actions_8h.html#aa3f0972cc45a4e34a407e39171935e0e", null ],

@@ -6,6 +6,7 @@ var webc_ui_8h =
     [ "Button", "structButton.html", null ],
     [ "NavLink", "structNavLink.html", null ],
     [ "CodeLine", "structCodeLine.html", null ],
+    [ "Footer", "structFooter.html", null ],
     [ "WEBC_DaisyAccordion", "webc-ui_8h.html#a152486e06808d42b0a41b0b5e80cf8a1", null ],
     [ "WEBC_DaisyAlert", "webc-ui_8h.html#a72c61e89a03e9f48100ada768d12e667", null ],
     [ "WEBC_DaisyAvatar", "webc-ui_8h.html#ae6d84cbfadf5bd843ca1866ce4062e4f", null ],
