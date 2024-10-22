@@ -22,8 +22,10 @@ digraph "include/webc-core.h"
   Node1 -> Node8 [id="edge9_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="include/webc-templates\l/template.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$template_8h.html",tooltip=" "];
   Node8 -> Node4 [id="edge10_Node000008_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node8 -> Node6 [id="edge11_Node000008_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node8 -> Node7 [id="edge12_Node000008_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node9 [id="edge13_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="include/webc-ui.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$webc-ui_8h.html",tooltip=" "];
+  Node8 -> Node9 [id="edge11_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="include/webc-templates\l/markdown.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$markdown_8h.html",tooltip=" "];
+  Node8 -> Node6 [id="edge12_Node000008_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node7 [id="edge13_Node000008_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node10 [id="edge14_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="include/webc-ui.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$webc-ui_8h.html",tooltip=" "];
 }
